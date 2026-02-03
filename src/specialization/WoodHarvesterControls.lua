@@ -389,18 +389,18 @@ function WoodHarvesterControls:onLoad(superFunc, savegame)
     spec.automaticOpen = true
     spec.grabOnCut = true
 
-    spec.numberOfAssortments = 1;
+    spec.numberOfAssortments = 4;
     spec.bucking = { {
-        length = 3.7,
-        minDiameter = 0.38
+        length = 5.3,
+        minDiameter = 0.26
     }, {
-        length = 4.9,
-        minDiameter = 0.18
+        length = 3.15,
+        minDiameter = 0.20
     }, {
-        length = 2.5,
+        length = 4.5,
         minDiameter = 0.1
     }, {
-        length = 1,
+        length = 3.7,
         minDiameter = 0
     } }
 
