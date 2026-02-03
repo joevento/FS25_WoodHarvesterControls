@@ -1,6 +1,6 @@
 --
 -- Author: Bargon Mods
--- 
+--
 WoodHarvesterControls_Main = {}
 
 local WoodHarvesterControls_Main_mt = Class(WoodHarvesterControls_Main)
@@ -29,7 +29,7 @@ function WoodHarvesterControls_Main:onMissionLoaded(mission)
 end
 
 function WoodHarvesterControls_Main.installSpecializations(vehicleTypeManager, specializationManager, modDirectory,
-    modName)
+                                                           modName)
     specializationManager:addSpecialization("woodHarvesterControls", "WoodHarvesterControls", Utils.getFilename(
         "src/specialization/WoodHarvesterControls.lua", modDirectory), nil)
 

@@ -1,6 +1,6 @@
 --
 -- Author: Bargon Mods
--- 
+--
 WoodHarvesterControls_UI = {}
 local WoodHarvesterControls_UI_mt = Class(WoodHarvesterControls_UI, ScreenElement)
 
@@ -32,26 +32,26 @@ end
 function WoodHarvesterControls_UI:onOpen()
     WoodHarvesterControls_UI:superClass().onOpen(self)
 
-    self.numberOfAssortmentsSetting:setTexts({"1", "2", "3", "4"})
+    self.numberOfAssortmentsSetting:setTexts({ "1", "2", "3", "4" })
 
-    self.autoProgramFeedingSetting:setTexts({self.i18n:getText("ui_WoodHarvesterControls_press"),
-                                             self.i18n:getText("ui_WoodHarvesterControls_hold")})
+    self.autoProgramFeedingSetting:setTexts({ self.i18n:getText("ui_WoodHarvesterControls_press"),
+        self.i18n:getText("ui_WoodHarvesterControls_hold") })
 
-    self.autoProgramFellingCutSetting:setTexts({self.i18n:getText("ui_WoodHarvesterControls_press"),
-                                                self.i18n:getText("ui_WoodHarvesterControls_hold"),
-                                                self.i18n:getText("ui_WoodHarvesterControls_off")})
+    self.autoProgramFellingCutSetting:setTexts({ self.i18n:getText("ui_WoodHarvesterControls_press"),
+        self.i18n:getText("ui_WoodHarvesterControls_hold"),
+        self.i18n:getText("ui_WoodHarvesterControls_off") })
 
-    self.autoProgramBuckingCutSetting:setTexts({self.i18n:getText("ui_WoodHarvesterControls_press"),
-                                                self.i18n:getText("ui_WoodHarvesterControls_hold"),
-                                                self.i18n:getText("ui_WoodHarvesterControls_off")})
+    self.autoProgramBuckingCutSetting:setTexts({ self.i18n:getText("ui_WoodHarvesterControls_press"),
+        self.i18n:getText("ui_WoodHarvesterControls_hold"),
+        self.i18n:getText("ui_WoodHarvesterControls_off") })
 
-    self.rotatorModeSetting:setTexts({self.i18n:getText("ui_WoodHarvesterControls_free"),
-                                      self.i18n:getText("ui_WoodHarvesterControls_fixed"),
-                                      self.i18n:getText("ui_WoodHarvesterControls_physical")})
+    self.rotatorModeSetting:setTexts({ self.i18n:getText("ui_WoodHarvesterControls_free"),
+        self.i18n:getText("ui_WoodHarvesterControls_fixed"),
+        self.i18n:getText("ui_WoodHarvesterControls_physical") })
 
-    self.sawModeSetting:setTexts({self.i18n:getText("ui_WoodHarvesterControls_automatic"),
-                                  self.i18n:getText("ui_WoodHarvesterControls_semiautomatic"),
-                                  self.i18n:getText("ui_WoodHarvesterControls_manual")})
+    self.sawModeSetting:setTexts({ self.i18n:getText("ui_WoodHarvesterControls_automatic"),
+        self.i18n:getText("ui_WoodHarvesterControls_semiautomatic"),
+        self.i18n:getText("ui_WoodHarvesterControls_manual") })
 
     local alternated = false;
     for key, element in pairs(self.boxLayout.elements) do
@@ -99,14 +99,13 @@ function WoodHarvesterControls_UI:updateValues()
     self.numberOfAssortmentsSetting:setState(whSpec.numberOfAssortments)
 
     for i = 1, 4 do
-
         if self["minDiameter" .. i] ~= nil then
             self["minDiameter" .. i]:setText(tostring(MathUtil.round(
                 whSpec.bucking[i].minDiameter / WoodHarvesterControls_UI.LENGTH_FACTOR)))
         end
         if self["buckingLength" .. i] ~= nil then
             self["buckingLength" .. i]:setText(tostring(MathUtil.round(whSpec.bucking[i].length /
-                                                                           WoodHarvesterControls_UI.LENGTH_FACTOR)))
+                WoodHarvesterControls_UI.LENGTH_FACTOR)))
         end
     end
 
@@ -135,12 +134,12 @@ function WoodHarvesterControls_UI:updateValues()
 
     for i = 1, 4 do
         self["lengthPreset" .. i]:setText(tostring(MathUtil.round(whSpec["lengthPreset" .. i] /
-                                                                      WoodHarvesterControls_UI.LENGTH_FACTOR)))
+            WoodHarvesterControls_UI.LENGTH_FACTOR)))
     end
     self.repeatLengthPresetSetting:setIsChecked(whSpec.repeatLengthPreset)
 
     self.breakingDistance:setText(tostring(MathUtil.round(whSpec.breakingDistance /
-                                                              WoodHarvesterControls_UI.LENGTH_FACTOR)))
+        WoodHarvesterControls_UI.LENGTH_FACTOR)))
 
     if whSpec.cutReleasedComponentJoint ~= nil then
         self.slowFeedingTiltedUpSetting:setIsChecked(whSpec.slowFeedingTiltedUp)
@@ -151,9 +150,9 @@ function WoodHarvesterControls_UI:updateValues()
     end
 
     self.feedingSpeed:setText(tostring(MathUtil.round(whSpec.feedingSpeed /
-                                                          WoodHarvesterControls_UI.FEEDING_SPEED_FACTOR, 2)))
+        WoodHarvesterControls_UI.FEEDING_SPEED_FACTOR, 2)))
     self.slowFeedingSpeed:setText(tostring(MathUtil.round(whSpec.slowFeedingSpeed /
-                                                              WoodHarvesterControls_UI.FEEDING_SPEED_FACTOR, 2)))
+        WoodHarvesterControls_UI.FEEDING_SPEED_FACTOR, 2)))
 
     if whSpec.cutReleasedComponentJoint ~= nil then
         self.tiltDownOnFellingCutSetting:setIsChecked(whSpec.tiltDownOnFellingCut)
@@ -180,7 +179,7 @@ function WoodHarvesterControls_UI:updateValues()
     self.registerSoundSetting:setIsChecked(whSpec.registerSound)
 
     self.maxRemovingLength:setText(tostring(MathUtil.round(whSpec.maxRemovingLength /
-                                                               WoodHarvesterControls_UI.LENGTH_FACTOR)))
+        WoodHarvesterControls_UI.LENGTH_FACTOR)))
 
     if whSpec.allSplitType ~= nil then
         self.allSplitTypeSetting:setIsChecked(whSpec.allSplitType)
@@ -189,7 +188,6 @@ end
 
 function WoodHarvesterControls_UI:haveDifferentValues(table1, table2)
     if type(table1) ~= "table" or type(table2) ~= "table" then
-
         if type(table1) == "number" and type(table2) == "number" then
             local epsilon = 1e-5
             return math.abs(table1 - table2) > epsilon
@@ -430,7 +428,6 @@ function WoodHarvesterControls_UI:onNumberChangedClamp(element, text, min, max)
         elseif number > max then
             element:setText(tostring(max))
         else
-
             element:setText(text)
         end
     end

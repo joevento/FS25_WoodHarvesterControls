@@ -56,7 +56,7 @@
 
         <text name="ui_WoodHarvesterControls_helpMsg" text="Consulta el menú de ayuda del juego para saber más sobre este mod y aprender técnicas avanzadas que se utilizan en la vida real" />
 
-        <text name="ui_WoodHarvesterControls_backMenuWarning"  text="¡ATENCIÓN!
+        <text name="ui_WoodHarvesterControls_backMenuWarning" text="¡ATENCIÓN!
 ¿Está seguro de que desea descartar los cambios?" />
         <text name="ui_WoodHarvesterControls_discardChanges" text="Descartar cambios" />
         <text name="ui_WoodHarvesterControls_keepEditing" text="Seguir editando" />
@@ -141,7 +141,6 @@ Pruébelo y si se comporta de forma extraña, desactívelo y, si es necesario, r
         <text name="ui_WoodHarvesterControls_rotatorThresholdTitle" text="Umbral del rotor" />
         <text name="ui_WoodHarvesterControls_rotatorThresholdTT" text="Define el umbral de actualización de la rotación en grados. Si notas que el rotor se atasca, debes aumentar el umbral. (Cuanto más bajo sea el umbral, más precisa será la actualización de la rotación.) (Cuanta más sensibilidad haya en los controles, más umbral será necesario para que vaya suave)" />
 
-
         <!-- length presets -->
         <text name="ui_WoodHarvesterControls_sectionLengthPresets" text="Longitudes preestablecidas" />
 
@@ -167,7 +166,6 @@ No: Avanzará a la longitud del programa automático" />
 
         <text name="ui_WoodHarvesterControls_sawModeTitle" text="Modo de sierra" />
         <text name="ui_WoodHarvesterControls_sawModeTT" text="Automático: al pulsar el botón de corte, la sierra realiza un corte completo. Semiautomático: necesita mantener pulsado el botón de corte para hacer funcionar la sierra con el cabezal levantado. Manual: es necesario mantener pulsado el botón para hacer funcionar la sierra en todos los casos" />
-
 
         <!-- Feeding -->
         <text name="ui_WoodHarvesterControls_sectionFeeding" text="Alimentación" />
@@ -310,7 +308,6 @@ Para seleccionar la primera longitud preestablecida, pulse una vez el botón y p
 
 - Esto es muy útil para sacar un árbol levantado de lugares estrechos y luego soltar el botón para dejarlo caer justo donde quiere que caiga." />
 
-
         <!-- Processing standing trees -->
         <text name="help_WoodHarvesterControls_processingStandingTreesTitle" text="Procesamiento de árboles en pie" />
         <text name="help_WoodHarvesterControls_processingStandingTrees" text="Un estilo de trabajo consiste en cortar y procesar los árboles directamente en el bosque y luego recoger los troncos con un tractor o autocargador para llevarlos a una zona accesible para camiones. Este método se denomina cut-to-length." />
@@ -371,7 +368,6 @@ Otra opción es cortar trozos pequeños que sean más fáciles de triturar despu
 Puede utilizar el botón de abrir o el botón de abrir / cerrar para abrir el cabezal.
 
 Puede mantener pulsado el botón de abrir si tiene activada la opción 'Levantar cabezal con el botón de abrir' y el cabezal se abrirá y se levantará. De lo contrario, tendrás que utilizar el botón de levantar o el botón de levantar / bajar." />
-
 
         <!-- Processing felled trees -->
         <text name="help_WoodHarvesterControls_processingFelledTreesTitle" text="Procesamiento de árboles talados" />

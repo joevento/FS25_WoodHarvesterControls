@@ -120,7 +120,7 @@ WHC.ROTATOR_PHYSICAL = 3
 WHC.MIN_BREAKING_SPEED = 0.0005
 WHC.MIN_DISTANCE_TO_GROUND = 0.3
 
-local Actions = {{
+local Actions = { {
     name = ActionName.DEFAULT_SAW,
     priority = GS_PRIO_HIGH,
     text = g_i18n:getText("action_saw"),
@@ -192,7 +192,7 @@ local Actions = {{
 }, {
     name = ActionName.MENU,
     priority = GS_PRIO_HIGH
-}}
+} }
 
 function WoodHarvesterControls.prerequisitesPresent(specializations)
     return SpecializationUtil.hasSpecialization(TurnOnVehicle, specializations)
@@ -236,7 +236,6 @@ function WoodHarvesterControls:initSpecAndGetConfiguration()
 end
 
 function WoodHarvesterControls:onLoad(superFunc, savegame)
-
     WoodHarvesterControls.initSpecAndGetConfiguration(self)
 
     if not self.spec_woodHarvesterControls.enabled then
@@ -391,7 +390,7 @@ function WoodHarvesterControls:onLoad(superFunc, savegame)
     spec.grabOnCut = true
 
     spec.numberOfAssortments = 1;
-    spec.bucking = {{
+    spec.bucking = { {
         length = 3.7,
         minDiameter = 0.38
     }, {
@@ -403,7 +402,7 @@ function WoodHarvesterControls:onLoad(superFunc, savegame)
     }, {
         length = 1,
         minDiameter = 0
-    }}
+    } }
 
     spec.autoProgramFeeding = WHC.AUTO_PUSH
     spec.autoProgramFellingCut = WHC.AUTO_PUSH
@@ -557,7 +556,6 @@ function WoodHarvesterControls:onLoad(superFunc, savegame)
 
         spec.samples.cutEnd = g_soundManager:loadSampleFromXML(self.xmlFile, "vehicle.woodHarvesterControls.sounds",
             "cutEnd", self.baseDirectory, self.components, 1, AudioGroup.VEHICLE, self.i3dMappings, self)
-
     end
 end
 
@@ -775,7 +773,6 @@ function WoodHarvesterControls:onReadStream(superFunc, streamId, connection)
     spec.registerSound = streamReadBool(streamId)
     spec.maxRemovingLength = streamReadFloat32(streamId)
     spec.allSplitType = streamReadBool(streamId)
-
 end
 
 function WoodHarvesterControls:onWriteStream(superFunc, streamId, connection)
@@ -831,7 +828,6 @@ function WoodHarvesterControls:onWriteStream(superFunc, streamId, connection)
     streamWriteBool(streamId, spec.registerSound)
     streamWriteFloat32(streamId, spec.maxRemovingLength)
     streamWriteBool(streamId, spec.allSplitType)
-
 end
 
 function WoodHarvesterControls:onReadUpdateStream(superFunc, streamId, timestamp, connection)
@@ -914,7 +910,6 @@ function WoodHarvesterControls:onUpdate(superFunc, dt, isActiveForInput, isActiv
                     else
                         WHC.raiseSaw(self)
                     end
-
                 end
             else
                 spec.cutTimer = math.max(spec.cutTimer - dt, 0)
@@ -1023,7 +1018,6 @@ function WoodHarvesterControls:onUpdate(superFunc, dt, isActiveForInput, isActiv
         end
 
         if spec.attachedSplitShape ~= nil and spec.isAttachedSplitShapeMoving then
-
             local translatedDistance = spec.currentFeedingSpeed
             if (not spec.manualFeedingForward and not spec.manualFeedingBackward) then
                 local distanceToTarget = math.abs(spec.attachedSplitShapeY - spec.attachedSplitShapeTargetY)
@@ -1068,7 +1062,6 @@ function WoodHarvesterControls:onUpdate(superFunc, dt, isActiveForInput, isActiv
 
                 if lengthToTop == nil or lengthToTop <= 0.1 or lengthToBottom == nil or lengthToBottom <=
                     -spec.headHeight then
-
                     removeJoint(spec.attachedSplitShapeJointIndex)
                     spec.attachedSplitShapeJointIndex = nil
                     spec.attachedSplitShape = nil
@@ -1085,16 +1078,14 @@ function WoodHarvesterControls:onUpdate(superFunc, dt, isActiveForInput, isActiv
                     local registerFound = false
 
                     if spec.manualFeedingForward or spec.manualFeedingBackward then
-
                         if spec.manualFeedingForward then
                             spec.attachedSplitShapeY = spec.attachedSplitShapeY + translatedDistance *
-                                                           spec.cutAttachDirection
+                                spec.cutAttachDirection
                         elseif spec.manualFeedingBackward then
                             spec.attachedSplitShapeY = spec.attachedSplitShapeY - translatedDistance *
-                                                           spec.cutAttachDirection
+                                spec.cutAttachDirection
                         end
                     elseif spec.attachedSplitShapeY < spec.attachedSplitShapeTargetY then
-
                         local changedRegister = false
                         if spec.currentAssortmentIndex ~= nil then
                             local assortment = spec.bucking[spec.currentAssortmentIndex]
@@ -1113,7 +1104,6 @@ function WoodHarvesterControls:onUpdate(superFunc, dt, isActiveForInput, isActiv
                             end
                         end
                     else
-
                         spec.attachedSplitShapeY = spec.attachedSplitShapeY - translatedDistance
                         if spec.attachedSplitShapeY <= spec.attachedSplitShapeTargetY then
                             registerFound = true
@@ -1158,7 +1148,6 @@ function WoodHarvesterControls:onUpdate(superFunc, dt, isActiveForInput, isActiv
     if self.isServer and self:getIsTurnedOn() then
         if spec.rotatorMode == WHC.ROTATOR_PHYSICAL and spec.cutReleasedComponentJoint2 ~= nil and spec.rotatorNode ~=
             nil then
-
             if not spec.physicalRotatorStarted then
                 spec.physicalRotatorStarted = true
                 WHC.updateRotatorMode(self)
@@ -1169,7 +1158,6 @@ function WoodHarvesterControls:onUpdate(superFunc, dt, isActiveForInput, isActiv
             local rotNode = spec.rotatorNode
 
             if jointNodeActor1 ~= nil and mountNode ~= nil and rotNode ~= nil then
-
                 local x = spec.rotatorRotationAxis == 1 and 1 or 0
                 local y = spec.rotatorRotationAxis == 2 and 1 or 0
                 local z = spec.rotatorRotationAxis == 3 and 1 or 0
@@ -1192,7 +1180,7 @@ function WoodHarvesterControls:onUpdate(superFunc, dt, isActiveForInput, isActiv
                 local y = MathUtil.dotProduct(nActorX, nActorY, nActorZ, rotAxisX, rotAxisY, rotAxisZ)
 
                 local angleBetween = math.atan2(y, x)
-                local rotNodeRotation = {getRotation(rotNode)}
+                local rotNodeRotation = { getRotation(rotNode) }
                 local isMoving = spec.rotatorMovingTool.move ~= nil and math.abs(spec.rotatorMovingTool.move) > 0.05
                 local currentRotation = rotNodeRotation[spec.rotatorRotationAxis]
                 local newRotation
@@ -1287,7 +1275,6 @@ function WoodHarvesterControls:onUpdate(superFunc, dt, isActiveForInput, isActiv
     end
 
     if self.isServer then
-
         if spec.cutAnimation.name ~= nil then
             if spec.isSawOut and spec.playCutSound == true then
                 local targetTime = spec.cutAnimation.cutTime
@@ -1307,12 +1294,10 @@ function WoodHarvesterControls:onUpdate(superFunc, dt, isActiveForInput, isActiv
         end
 
         if spec.isAttachedSplitShapeMoving then
-
             local forwardFeed = true
             if spec.manualFeedingBackward or
                 (not spec.manualFeedingForward and spec.hasAttachedSplitShape and spec.attachedSplitShapeY >=
                     spec.attachedSplitShapeTargetY) then
-
                 forwardFeed = false
             end
 
@@ -1328,7 +1313,6 @@ function WoodHarvesterControls:onUpdate(superFunc, dt, isActiveForInput, isActiv
 end
 
 function WoodHarvesterControls:whcHandleCutEffects(sound, particles, noEventSend)
-
     if sound == nil then
         sound = false
     end
@@ -1370,12 +1354,10 @@ function WoodHarvesterControls:whcHandleCutEffects(sound, particles, noEventSend
                 spec.isCutEffectPlaying = false
             end
         end
-
     end
 end
 
 function WoodHarvesterControls:whcHandleDelimbEffects(sound, particles, forward, noEventSend)
-
     if sound == nil then
         sound = false
     end
@@ -1439,7 +1421,6 @@ function WoodHarvesterControls:whcHandleDelimbEffects(sound, particles, forward,
                 spec.isDelimbEffectPlaying = false
             end
         end
-
     end
 end
 
@@ -1470,7 +1451,6 @@ function WoodHarvesterControls:onUpdateTick(superFunc, dt, isActiveForInput, isA
                 if minY == nil then
                     spec.curSplitShape = nil
                 else
-
                     local cutTooLow = false
                     local _
                     _, y, _ = localToLocal(spec.cutNode, spec.curSplitShape, 0, minY, minZ)
@@ -1494,12 +1474,10 @@ function WoodHarvesterControls:onUpdateTick(superFunc, dt, isActiveForInput, isA
                     g_server:broadcastEvent(WoodHarvesterOnCutTreeEvent.new(self, 0), nil, nil, self)
                 end
             end
-
         end
     end
 
     if self.isServer then
-
         if spec.tiltControl == true then
             local shouldUpdateLimit = false
             local shouldUpdateSpring = false
@@ -1514,7 +1492,7 @@ function WoodHarvesterControls:onUpdateTick(superFunc, dt, isActiveForInput, isA
                     if spec.cutReleasedComponentJointRotLimitXNegative ~= spec.tiltMaxRot then
                         spec.cutReleasedComponentJointRotLimitXNegative = math.min(spec.tiltMaxRot,
                             spec.cutReleasedComponentJointRotLimitXNegative +
-                                spec.cutReleasedComponentJointRotLimitXSpeed * dt)
+                            spec.cutReleasedComponentJointRotLimitXSpeed * dt)
                         shouldUpdateLimit = true
                     end
 
@@ -1524,7 +1502,6 @@ function WoodHarvesterControls:onUpdateTick(superFunc, dt, isActiveForInput, isA
                         spec.currentTiltDownDamping = spec.tiltDownDamping
                         shouldUpdateSpring = true
                     end
-
                 elseif spec.tiltedUp == false and not spec.forcedTiltUp then
                     if spec.cutReleasedComponentJointRotLimitXNegative ~= 0 then
                         spec.cutReleasedComponentJointRotLimitXNegative = 0
@@ -1543,7 +1520,6 @@ function WoodHarvesterControls:onUpdateTick(superFunc, dt, isActiveForInput, isA
                         spec.currentTiltDownDamping = WHC.DEFAULT_TILT_DOWN_DAMPING
                         shouldUpdateSpring = true
                     end
-
                 elseif spec.tiltedUp == true then
                     if spec.cutReleasedComponentJointRotLimitXNegative ~= 0 then
                         spec.cutReleasedComponentJointRotLimitXNegative = 0
@@ -1576,7 +1552,6 @@ function WoodHarvesterControls:onUpdateTick(superFunc, dt, isActiveForInput, isA
             end
         else
             if spec.attachedSplitShape == nil then
-
                 if spec.cutReleasedComponentJoint ~= nil and spec.cutReleasedComponentJointRotLimitX ~= 0 then
                     spec.cutReleasedComponentJointRotLimitX =
                         math.max(0, spec.cutReleasedComponentJointRotLimitX -
@@ -1588,7 +1563,6 @@ function WoodHarvesterControls:onUpdateTick(superFunc, dt, isActiveForInput, isA
         end
 
         if spec.rotatorMode == WHC.ROTATOR_FREE then
-
             if spec.attachedSplitShape == nil then
                 if spec.cutReleasedComponentJoint2 ~= nil and spec.cutReleasedComponentJoint2RotLimitX ~= 0 then
                     spec.cutReleasedComponentJoint2RotLimitX = math.max(
@@ -1694,7 +1668,6 @@ function WoodHarvesterControls:onCutTree(superFunc, radius)
 end
 
 function WoodHarvesterControls:whcUpdateSettings(settings, noEventSend)
-
     WoodHarvesterControlsUpdateSettingsEvent.sendEvent(self, settings, noEventSend)
 
     local spec = self.spec_woodHarvester
@@ -1815,7 +1788,6 @@ function WoodHarvesterControls:setDelimbStatus(speed, manualFeedingForward, manu
     end
 
     if manualFeedingForward or manualFeedingBackward then
-
         spec.automaticFeedingStarted = false
         spec.autoProgramStarted = false
     end
@@ -1838,7 +1810,6 @@ function WoodHarvesterControls:findRegister(desiredLength, noEventSend)
             end
 
             if assortment.length ~= nil and minDiameter < spec.lastDiameter then
-
                 spec.currentAssortmentIndex = index
                 length = assortment.length
                 break
@@ -1888,7 +1859,6 @@ function WoodHarvesterControls:whcHandleRegisterSound(newRegister, noEventSend)
             end
         end
     end
-
 end
 
 function WoodHarvesterControls:onRegisterFound()
@@ -1959,7 +1929,7 @@ function WoodHarvesterControls:raiseSaw()
 end
 
 function WoodHarvesterControls:woodHarvesterSplitShapeCallback(superFunc, shape, isBelow, isAbove, minY, maxY, minZ,
-    maxZ)
+                                                               maxZ)
     if not self.spec_woodHarvesterControls.enabled then
         superFunc(self, shape, isBelow, isAbove, minY, maxY, minZ, maxZ)
         return
@@ -1971,7 +1941,6 @@ function WoodHarvesterControls:woodHarvesterSplitShapeCallback(superFunc, shape,
     g_treePlantManager:addingSplitShape(shape, self.shapeBeingCut, self.shapeBeingCutIsTree)
 
     if isAbove and not isBelow then
-
         if spec.grabOnCut then
             spec.isHeadClosed = true
         end
@@ -1990,7 +1959,6 @@ function WoodHarvesterControls:woodHarvesterSplitShapeCallback(superFunc, shape,
                     end
                 end
             else
-
                 if WHC.isTiltedUp(self) and spec.tiltDownOnFellingCut then
                     spec.tiltedUpOnCut = true
                     spec.tiltedUp = false
@@ -2029,7 +1997,7 @@ function WoodHarvesterControls:attachShape(shape, minY, maxY, minZ, maxZ)
 
     if spec.attachedSplitShape == nil and spec.cutAttachNode ~= nil and spec.cutAttachReferenceNode ~= nil then
         spec.attachedSplitShape = shape
-        spec.lastTreeSize = {minY, maxY, minZ, maxZ}
+        spec.lastTreeSize = { minY, maxY, minZ, maxZ }
 
         local treeCenterX, treeCenterY, treeCenterZ = localToWorld(spec.cutNode, 0, (minY + maxY) * 0.5,
             (minZ + maxZ) * 0.5)
@@ -2041,7 +2009,7 @@ function WoodHarvesterControls:attachShape(shape, minY, maxY, minZ, maxZ)
 
             spec.loadedSplitShapeFromSavegame = false
         end
-        spec.lastTreeJointPos = {worldToLocal(shape, treeCenterX, treeCenterY, treeCenterZ)}
+        spec.lastTreeJointPos = { worldToLocal(shape, treeCenterX, treeCenterY, treeCenterZ) }
 
         local x, y, z = localToWorld(spec.cutAttachReferenceNode, 0, 0, (maxZ - minZ) * 0.5)
 
@@ -2077,7 +2045,6 @@ function WoodHarvesterControls:attachShape(shape, minY, maxY, minZ, maxZ)
         spec.currentLength = 0
 
         spec.hasAttachedSplitShape = true
-
     end
 end
 
@@ -2672,7 +2639,7 @@ function WHC:isStandingTreeInRange()
     local spec = self.spec_woodHarvester
 
     return spec.attachedSplitShape == nil and spec.curSplitShape ~= nil and getRigidBodyType(spec.curSplitShape) ==
-               RigidBodyType.STATIC
+        RigidBodyType.STATIC
 end
 
 function WHC:openHead()
@@ -2766,10 +2733,8 @@ function WHC:playAnimationToStopTime(animationKey, targetTime, speedFactor)
     local direction = 1
     local currentTime = self:getAnimationTime(name)
     if currentTime < targetTime then
-
         direction = speedScale > 0 and 1 or -1
     else
-
         direction = speedScale < 0 and 1 or -1
     end
 
