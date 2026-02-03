@@ -1,5 +1,5 @@
 --
--- Author: Bargon Mods
+-- Author: Bargon Mods, DiscoFlower8890
 --
 WoodHarvesterControls_UI = {}
 local WoodHarvesterControls_UI_mt = Class(WoodHarvesterControls_UI, ScreenElement)

@@ -1,5 +1,5 @@
 --
--- Author: Bargon Mods
+-- Author: Bargon Mods, DiscoFlower8890
 --
 WoodHarvesterControls_Main = {}
 

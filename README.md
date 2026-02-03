@@ -1,5 +1,5 @@
 # Wood Harvester Controls script for Farming Simulator 25
-<i>Current version 0.1.0.0</i>
+<i>Current version 0.2.0.0</i>
 **A Wood Harvester Simulator inside FS25!**
 
 [![Testing First FS25 Wood Harvester Controls Mod Version](https://img.youtube.com/vi/97-YXLlygUk/0.jpg)](https://youtu.be/97-YXLlygUk?si=VfMi_lKAvMFBi7Kf)
