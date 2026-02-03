@@ -5,8 +5,8 @@ WoodHarvesterControls_UI = {}
 local WoodHarvesterControls_UI_mt = Class(WoodHarvesterControls_UI, ScreenElement)
 
 WoodHarvesterControls_UI.MAX_LENGTH = 3000
-WoodHarvesterControls_UI.MAX_DIAMETER = 100
-WoodHarvesterControls_UI.MAX_FEEDING_SPEED = 6
+WoodHarvesterControls_UI.MAX_DIAMETER = 300
+WoodHarvesterControls_UI.MAX_FEEDING_SPEED = 15
 WoodHarvesterControls_UI.MIN_FEEDING_SPEED = 1
 WoodHarvesterControls_UI.FEEDING_SPEED_FACTOR = 0.001
 WoodHarvesterControls_UI.LENGTH_FACTOR = 0.01
