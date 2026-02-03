@@ -27,7 +27,6 @@ function WoodHarvesterControlsPlayAnimationEvent:writeStream(streamId, connectio
     streamWriteFloat32(streamId, self.speed)
     streamWriteFloat32(streamId, self.animTime)
     streamWriteFloat32(streamId, self.targetAnimTime)
-
 end
 
 function WoodHarvesterControlsPlayAnimationEvent:readStream(streamId, connection)
