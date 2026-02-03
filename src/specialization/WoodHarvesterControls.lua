@@ -1474,6 +1474,10 @@ function WoodHarvesterControls:onUpdateTick(superFunc, dt, isActiveForInput, isA
                     g_server:broadcastEvent(WoodHarvesterOnCutTreeEvent.new(self, 0), nil, nil, self)
                 end
             end
+        else
+            self:setLastTreeDiameter(self.spec_woodHarvester.lastDiameter)
+            WHC.closeHead(self)
+            -- The position of the tree doesn't get updated so its sometimes sitting quite far from the body but I don't see a way to fix it
         end
     end
 
