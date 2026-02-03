@@ -434,6 +434,7 @@ function WoodHarvesterControls:onLoad(superFunc, savegame)
 
     spec.registerSound = true
     spec.maxRemovingLength = 0.5
+    spec.maxRemovingDiameter = 0.2
     spec.allSplitType = false
 
     spec.tempDiameter = 0
@@ -617,6 +618,7 @@ function WoodHarvesterControls:onPostLoad(superFunc, savegame)
 
     spec.registerSound = savegame.xmlFile:getValue(key .. "#registerSound", spec.registerSound)
     spec.maxRemovingLength = savegame.xmlFile:getValue(key .. "#maxRemovingLength", spec.maxRemovingLength)
+    spec.maxRemovingDiameter = savegame.xmlFile:getValue(key .. "#maxRemovingDiameter", spec.maxRemovingDiameter)
     spec.allSplitType = savegame.xmlFile:getValue(key .. "#allSplitType", spec.allSplitType)
 end
 
@@ -712,6 +714,7 @@ function WoodHarvesterControls:saveToXMLFile(xmlFile, key, usedModNames)
 
     xmlFile:setValue(key .. "#registerSound", spec.registerSound)
     xmlFile:setValue(key .. "#maxRemovingLength", spec.maxRemovingLength)
+    xmlFile:setValue(key .. "#maxRemovingDiameter", spec.maxRemovingDiameter)
     xmlFile:setValue(key .. "#allSplitType", spec.allSplitType)
 end
 
@@ -772,6 +775,7 @@ function WoodHarvesterControls:onReadStream(superFunc, streamId, connection)
 
     spec.registerSound = streamReadBool(streamId)
     spec.maxRemovingLength = streamReadFloat32(streamId)
+    spec.maxRemovingDiameter = streamReadFloat32(streamId)
     spec.allSplitType = streamReadBool(streamId)
 end
 
@@ -827,6 +831,7 @@ function WoodHarvesterControls:onWriteStream(superFunc, streamId, connection)
 
     streamWriteBool(streamId, spec.registerSound)
     streamWriteFloat32(streamId, spec.maxRemovingLength)
+    streamWriteFloat32(streamId, spec.maxRemovingDiameter)
     streamWriteBool(streamId, spec.allSplitType)
 end
 
@@ -1719,6 +1724,7 @@ function WoodHarvesterControls:whcUpdateSettings(settings, noEventSend)
 
     spec.registerSound = settings.registerSound
     spec.maxRemovingLength = settings.maxRemovingLength
+    spec.maxRemovingDiameter = settings.maxRemovingDiameter
     spec.allSplitType = settings.allSplitType
 
     if self.isServer then
@@ -1992,6 +1998,13 @@ function WoodHarvesterControls:woodHarvesterSplitShapeCallback(superFunc, shape,
         local maxSize = math.max(sizeX, sizeY, sizeZ)
         if maxSize < spec.maxRemovingLength then
             delete(shape)
+        end
+    elseif spec.maxRemovingDiameter > 0 then
+        local sizeX, sizeY, sizeZ, _, _ = getSplitShapeStats(shape)
+        local minSize = math.min(sizeX, sizeY, sizeZ)
+        if minSize < spec.maxRemovingDiameter then
+            delete(shape)
+            spec.attachedSplitShape = nil
         end
     end
 end
@@ -2812,5 +2825,6 @@ function WHC.registerSavegameSchema()
 
     schemaSavegame:register(XMLValueType.BOOL, key .. "#registerSound", "Register found sounds")
     schemaSavegame:register(XMLValueType.FLOAT, key .. "#maxRemovingLength", "Max removing length")
+    schemaSavegame:register(XMLValueType.FLOAT, key .. "#maxRemovingDiameter", "Max removing diameter")
     schemaSavegame:register(XMLValueType.BOOL, key .. "#allSplitType", "Support all trees")
 end

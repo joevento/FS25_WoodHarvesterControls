@@ -204,6 +204,9 @@ Aus: Startet die Zufuhr entsprechend der Längen des Automatikprogramms." />
         <text name="ui_WoodHarvesterControls_maxRemovingLengthTitle" text="Stämme unter Durchmesser entfernen (cm)" />
         <text name="ui_WoodHarvesterControls_maxRemovingLengthTT" text="Abgetrennte Stämme unterhalb der definierten Länge werden entfernt. Die verbessert die Leistung durch Vermeidung kleiner Stücke die z.B. entstehen wenn die Stammenden bereinigt werden." />
 
+        <text name="ui_WoodHarvesterControls_maxRemovingDiameterTitle" text="Entfernen Sie Baumstämme mit einem Durchmesser von weniger als (cm)." />
+        <text name="ui_WoodHarvesterControls_maxRemovingDiameterTT" text="Geschnittene Stämme mit einem Durchmesser, der kleiner als der definierte Durchmesser ist, werden entfernt. Dies kann die Leistung verbessern, indem dünne Stücke vermieden werden." />
+
         <text name="ui_WoodHarvesterControls_allSplitTypeTitle" text="Alle Bäume unterstützen" />
         <text name="ui_WoodHarvesterControls_allSplitTypeTT" text="Ist die Option aktiv können alle Baum-Typen mit Holzvollerntern verarbeitet werden. Dies is nützlich um Bäume die mit der Kettensäge entastet wurden zu verarbeiten.
 Bitte beachten, die Kollisionen der normalerweise nicht unterstützen Bäume können zu Problemen mit Holzvollerntern führen. Mit Vorsicht benutzen!" />

@@ -206,6 +206,9 @@ Av: Mates til den automatiske programlengden" />
         <text name="ui_WoodHarvesterControls_maxRemovingLengthTitle" text="Fjern tømmerstokker som er mindre enn (cm)" />
         <text name="ui_WoodHarvesterControls_maxRemovingLengthTT" text="Avkuttede stokker som er mindre enn den definerte lengden vil bli fjernet. Dette kan forbedre ytelsen ved å unngå små biter, for eksempel når du kutter en liten bit for å rydde opp i den nederste delen av treet" />
 
+        <text name="ui_WoodHarvesterControls_maxRemovingDiameterTitle" text="Fjern stokker med diameter mindre enn (cm)" />
+        <text name="ui_WoodHarvesterControls_maxRemovingDiameterTT" text="Kappede stokker med en diameter mindre enn den definerte diameteren vil bli fjernet. Dette kan forbedre ytelsen ved å unngå tynne stykker." />
+
         <text name="ui_WoodHarvesterControls_allSplitTypeTitle" text="Støtt alle tretyper" />
         <text name="ui_WoodHarvesterControls_allSplitTypeTT" text="Med dette alternativet kan du kutte alle typer trær med denne hogstmaskinen. Det er nyttig for eksempel å felle treet eller å mate hovedstammen (etter å ha kvist den med motorsagen).
 Vær oppmerksom på at disse trekollisjonene ikke er ment å brukes med hogstmaskinen. Bruk den forsiktig!" />

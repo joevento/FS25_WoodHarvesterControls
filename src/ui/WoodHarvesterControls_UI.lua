@@ -181,6 +181,9 @@ function WoodHarvesterControls_UI:updateValues()
     self.maxRemovingLength:setText(tostring(MathUtil.round(whSpec.maxRemovingLength /
         WoodHarvesterControls_UI.LENGTH_FACTOR)))
 
+    self.maxRemovingDiameter:setText(tostring(MathUtil.round(whSpec.maxRemovingDiameter /
+        WoodHarvesterControls_UI.LENGTH_FACTOR)))
+
     if whSpec.allSplitType ~= nil then
         self.allSplitTypeSetting:setIsChecked(whSpec.allSplitType)
     end
@@ -318,6 +321,9 @@ function WoodHarvesterControls_UI:updateSettingsToSave()
 
     local n = Utils.getNoNil(tonumber(self.maxRemovingLength:getText()), 0)
     settings.maxRemovingLength = MathUtil.round(n) * WoodHarvesterControls_UI.LENGTH_FACTOR
+
+    local n = Utils.getNoNil(tonumber(self.maxRemovingDiameter:getText()), 0)
+    settings.maxRemovingDiameter = MathUtil.round(n) * WoodHarvesterControls_UI.LENGTH_FACTOR
 
     settings.allSplitType = self.allSplitTypeSetting:getIsChecked()
 

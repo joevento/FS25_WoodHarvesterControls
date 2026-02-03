@@ -206,6 +206,9 @@ Testa det och om fordonet beter sig konstigt avakrivera fysisk rotator, och om n
         <text name="ui_WoodHarvesterControls_maxRemovingLengthTitle" text="Ta bort stockar som är mindre än (cm)" />
         <text name="ui_WoodHarvesterControls_maxRemovingLengthTT" text="Stockar som är kortare än den definierade längden kommer raderas. Detta förbättrar prestandan genoma att undvika små bitar, tex när du plockar upp en stam ifrån marken och ska nollställa längdmätning." />
 
+        <text name="ui_WoodHarvesterControls_maxRemovingDiameterTitle" text="Ta bort stockar med en diameter mindre än (cm)" />
+        <text name="ui_WoodHarvesterControls_maxRemovingDiameterTT" text="Kapade stockar med en diameter som är mindre än den angivna diametern kommer att tas bort. Detta kan förbättra prestandan genom att undvika tunna bitar." />
+
         <text name="ui_WoodHarvesterControls_allSplitTypeTitle" text="Stöd för alla träd" />
         <text name="ui_WoodHarvesterControls_allSplitTypeTT" text="Med detta allternativ igång kan du fälla alla typer av träd med skördaren. Du kan tex fälla trädet och bearbeta huvudstammen (efter att ha kvistat med motorsåg).
                 Observera att dessa träd är inte avsedda för skördaren, och har därför kollisioner som inte fungerar ihop med aggregatet. Använd med försiktighet!" />

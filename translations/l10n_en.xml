@@ -206,6 +206,9 @@ Off: Will feed to the automatic program length" />
         <text name="ui_WoodHarvesterControls_maxRemovingLengthTitle" text="Remove logs smaller than (cm)" />
         <text name="ui_WoodHarvesterControls_maxRemovingLengthTT" text="Cutted logs smaller than the defined length will be removed. This can improve performance avoiding little pieces for example when you cut a small piece to clean up the bottom part of the tree" />
 
+        <text name="ui_WoodHarvesterControls_maxRemovingDiameterTitle" text="Remove logs with diameter of less than (cm)" />
+        <text name="ui_WoodHarvesterControls_maxRemovingDiameterTT" text="Cutted logs with a diameter smaller than the defined diameter will be removed. This can improve performance avoiding thin pieces." />
+
         <text name="ui_WoodHarvesterControls_allSplitTypeTitle" text="Support all trees" />
         <text name="ui_WoodHarvesterControls_allSplitTypeTT" text="With this option you can cut all types of trees with this harvester. It is useful for example to fell the tree or to process the main trunk (after delimbing it with the chainsaw).
 Please note that those tree collisions are not intended to be used with the harvester. Use it carefully!" />

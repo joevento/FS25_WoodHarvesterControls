@@ -206,6 +206,9 @@ Pois: Syöttää automaattiohjelman mittaan" />
         <text name="ui_WoodHarvesterControls_maxRemovingLengthTitle" text="Poista pöllit joiden pituus on alle (cm)" />
         <text name="ui_WoodHarvesterControls_maxRemovingLengthTT" text="Sahatut pöllit jotka ovat lyhyempiä kuin asetus, poistetaan pelistä. Tämä auttaa parantamaan suorituskykyä hävittämällä pienet lumpit esimerkiksi jos oikaiset vinon pöllin pään." />
 
+        <text name="ui_WoodHarvesterControls_maxRemovingDiameterTitle" text="Poista halkaisijaltaan alle (cm) olevat puut" />
+        <text name="ui_WoodHarvesterControls_maxRemovingDiameterTT" text="Halkaisijaltaan määriteltyä halkaisijaa pienemmät pöllit poistetaan. Tämä auttaa parantamaan suorituskykyä hävittämällä pienet lumpit." />
+
         <text name="ui_WoodHarvesterControls_allSplitTypeTitle" text="Kaikkien puulajien tuki" />
         <text name="ui_WoodHarvesterControls_allSplitTypeTT" text="Tällä asetuksella voit käyttää hakkuukonetta kaikkiin puihin. Käytännöllinen esimerkiksi kaatamaan lehtipuita tai prosessoimaan niitä kun oksat on ensin karsittu moottorisahalla.
 Huomaa että lehtipuiden runkojen törmäysmallit eivät ole suunniteltu käytettäväksi hakkuukoneilla. Käytä harkiten!" />

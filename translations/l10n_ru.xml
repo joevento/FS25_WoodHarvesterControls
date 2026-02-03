@@ -287,6 +287,9 @@
         <text name="ui_WoodHarvesterControls_maxRemovingLengthTT"
             text="Отрезанные стволы ниже определённой длины измельчаются. Это повышает производительность за счёт исключения мелких деталей, например, образующихся при обрезке концов бревна." />
 
+        <text name="ui_WoodHarvesterControls_maxRemovingDiameterTitle" text="Удалите бревна диаметром менее (см)" />
+        <text name="ui_WoodHarvesterControls_maxRemovingDiameterTT" text="Брусья, диаметр которых меньше заданного, будут удалены. Это может повысить производительность, позволяя избежать использования тонких брусьев." />
+
         <text name="ui_WoodHarvesterControls_allSplitTypeTitle"
             text="Поддержка всех деревьев" />
         <text name="ui_WoodHarvesterControls_allSplitTypeTT"

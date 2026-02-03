@@ -573,6 +573,22 @@
         <Text profile="fs25_settingsMultiTextOptionTitle"
           text="$l10n_ui_WoodHarvesterControls_maxRemovingLengthTitle" />
       </Bitmap>
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="maxRemovingDiameter"
+          onTextChanged="onLengthChanged" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_maxRemovingDiameterTitle"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_maxRemovingDiameterTitle"
+          imeTitle="$l10n_ui_WoodHarvesterControls_maxRemovingDiameterTitle">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_maxRemovingDiameterTT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_maxRemovingDiameterTitle" />
+      </Bitmap>
 
       <!-- register sound -->
       <Bitmap profile="fs25_multiTextOptionContainer" id="allSplitTypeSettingBox">

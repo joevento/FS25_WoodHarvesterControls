@@ -61,6 +61,7 @@ function WoodHarvesterControlsUpdateSettingsEvent:writeStream(streamId, connecti
 
     streamWriteBool(streamId, self.settings.registerSound)
     streamWriteFloat32(streamId, self.settings.maxRemovingLength)
+    streamWriteFloat32(streamId, self.settings.maxRemovingDiameter)
     streamWriteBool(streamId, self.settings.allSplitType)
 end
 
@@ -111,6 +112,7 @@ function WoodHarvesterControlsUpdateSettingsEvent:readStream(streamId, connectio
 
     self.settings.registerSound = streamReadBool(streamId)
     self.settings.maxRemovingLength = streamReadFloat32(streamId)
+    self.settings.maxRemovingDiameter = streamReadFloat32(streamId)
     self.settings.allSplitType = streamReadBool(streamId)
 
     self:run(connection)

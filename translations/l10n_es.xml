@@ -206,6 +206,9 @@ No: Avanzará a la longitud del programa automático" />
         <text name="ui_WoodHarvesterControls_maxRemovingLengthTitle" text="Eliminar troncos menores de (cm)" />
         <text name="ui_WoodHarvesterControls_maxRemovingLengthTT" text="Los troncos cortados más pequeños que la longitud definida serán eliminados. Esto puede mejorar el rendimiento evitando trozos pequeños por ejemplo cuando se corta un trozo pequeño para limpiar la parte inferior del árbol" />
 
+        <text name="ui_WoodHarvesterControls_maxRemovingDiameterTitle" text="Retirar troncos con un diámetro inferior a (cm)." />
+        <text name="ui_WoodHarvesterControls_maxRemovingDiameterTT" text="Los troncos cortados con un diámetro inferior al diámetro definido se eliminarán. Esto puede mejorar el rendimiento evitando piezas delgadas." />
+
         <text name="ui_WoodHarvesterControls_allSplitTypeTitle" text="Soportar todos los árboles" />
         <text name="ui_WoodHarvesterControls_allSplitTypeTT" text="Con esta opción puede cortar todo tipo de árboles con esta procesadora. Es útil, por ejemplo, para talar el árbol o para procesar el tronco principal (después de desramarlo con la motosierra). Tenga en cuenta que las colisiones de estos árboles no están pensadas para utilizarse con la procesadora. ¡Utilízalo con cuidado!" />
 
