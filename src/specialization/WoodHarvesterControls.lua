@@ -1,5 +1,5 @@
 --
--- Author: Bargon Mods
+-- Author: Bargon Mods, DiscoFlower8890
 --
 WoodHarvesterControls = {}
 
@@ -96,7 +96,7 @@ local ButtonHandlerMapping = {
     [Button.BACKWARD_FEED] = "onBackwardFeedButton",
     [Button.SLOW_FORWARD_FEED] = "onSlowForwardFeedButton",
     [Button.SLOW_BACKWARD_FEED] = "onSlowBackwardFeedButton",
-    [Button.AUTOMATIC_PROGRAM] = "onAutomaticProgramButon",
+    [Button.AUTOMATIC_PROGRAM] = "onAutomaticProgramButton",
     [Button.STOP] = "onStopButton",
     [Button.LENGTH_PRESET_1] = "onPreset1Button",
     [Button.LENGTH_PRESET_2] = "onPreset2Button"
@@ -2353,7 +2353,7 @@ function WoodHarvesterControls:onPowerToggleButton()
     TurnOnVehicle.actionEventTurnOn(self)
 end
 
-function WoodHarvesterControls:onAutomaticProgramButon(isButtonDown)
+function WoodHarvesterControls:onAutomaticProgramButton(isButtonDown)
     WHC.runAutomaticProgram(self, isButtonDown)
 end
 

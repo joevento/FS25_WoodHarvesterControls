@@ -4,3 +4,4 @@ icon_sources/
 deploy.bat
 .vscode
 .luarc.json
+.emmyrc.json
