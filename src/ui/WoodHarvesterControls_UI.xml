@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+  <Bitmap profile="fs25_fullScreenBackground" id="whc_background" />
+  <GuiElement profile="fs25_menuContainer">
+    <GuiElement profile="fs25_menuHeaderPanel">
+      <Bitmap profile="fs25_menuHeaderIconBg">
+        <Bitmap profile="fs25_menuHeaderIcon"
+          imageSliceId="gui.icon_options_generalSettings2" />
+      </Bitmap>
+      <Text profile="fs25_menuHeaderTitle" text="$l10n_ui_WoodHarvesterControls_guiTitle" />
+    </GuiElement>
+    <ScrollingLayout profile="fs25_settingsLayout" id="boxLayout"
+      topClipperElementName="topClipper" bottomClipperElementName="bottomClipper">
+
+      <!-- EASY CONTROLS -->
+      <Text profile="fs25_settingsSectionHeader" name="sectionHeader"
+        text="$l10n_ui_WoodHarvesterControls_sectionEasyControls" />
+
+      <!-- automatic program with cut button -->
+      <Bitmap profile="fs25_multiTextOptionContainer" id="automaticWithCutButtonSettingBox">
+        <BinaryOption profile="fs25_settingsBinaryOption"
+          id="automaticWithCutButtonSetting">
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_automaticWithCutButtonTT" />
+        </BinaryOption>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_automaticWithCutButtonTitle" />
+      </Bitmap>
+
+      <!-- automatic tilt up -->
+      <Bitmap profile="fs25_multiTextOptionContainer" id="automaticTiltUpSettingBox">
+        <BinaryOption profile="fs25_settingsBinaryOption"
+          id="automaticTiltUpSetting">
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_automaticTiltUpTT" />
+        </BinaryOption>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_automaticTiltUpTitle" />
+      </Bitmap>
+
+      <!-- automatic open -->
+      <Bitmap profile="fs25_multiTextOptionContainer" id="automaticOpenSettingBox">
+        <BinaryOption profile="fs25_settingsBinaryOption"
+          id="automaticOpenSetting">
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_automaticOpenTT" />
+        </BinaryOption>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_automaticOpenTitle" />
+      </Bitmap>
+
+      <!-- grab on cut -->
+      <Bitmap profile="fs25_multiTextOptionContainer" id="grabOnCutSettingBox">
+        <BinaryOption profile="fs25_settingsBinaryOption"
+          id="grabOnCutSetting">
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_grabOnCutTT" />
+        </BinaryOption>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_grabOnCutTitle" />
+      </Bitmap>
+
+      <!-- BUCKING SYSTEM -->
+      <Text profile="fs25_settingsSectionHeader" name="sectionHeader"
+        text="$l10n_ui_WoodHarvesterControls_sectionBuckingSystem" />
+
+      <!-- number of assortments -->
+      <Bitmap profile="fs25_multiTextOptionContainer" id="numberOfAssortmentsSettingBox">
+        <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickNumberOfAssortment"
+          id="numberOfAssortmentsSetting">
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_numberOfAssortmentsTT" />
+        </MultiTextOption>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_numberOfAssortmentsTitle" />
+      </Bitmap>
+
+      <!-- bucking matrix -->
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="buckingLength1"
+          onTextChanged="onLengthChanged" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_buckingLength1Title"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_buckingLength1Title"
+          imeTitle="$l10n_ui_WoodHarvesterControls_buckingLength1Title">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_buckingLength1TT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_buckingLength1Title" />
+      </Bitmap>
+
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="minDiameter1"
+          onTextChanged="onDiameterChanged" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_minDiameter1Title"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_minDiameter1Title"
+          imeTitle="$l10n_ui_WoodHarvesterControls_minDiameter1Title">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_minDiameter1TT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_minDiameter1Title" />
+      </Bitmap>
+
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="buckingLength2"
+          onTextChanged="onLengthChanged" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_buckingLength2Title"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_buckingLength2Title"
+          imeTitle="$l10n_ui_WoodHarvesterControls_buckingLength2Title">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_buckingLength2TT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_buckingLength2Title" />
+      </Bitmap>
+
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="minDiameter2"
+          onTextChanged="onDiameterChanged" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_minDiameter2Title"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_minDiameter2Title"
+          imeTitle="$l10n_ui_WoodHarvesterControls_minDiameter2Title">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_minDiameter2TT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_minDiameter2Title" />
+      </Bitmap>
+
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="buckingLength3"
+          onTextChanged="onLengthChanged" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_buckingLength3Title"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_buckingLength3Title"
+          imeTitle="$l10n_ui_WoodHarvesterControls_buckingLength3Title">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_buckingLength3TT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_buckingLength3Title" />
+      </Bitmap>
+
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="minDiameter3"
+          onTextChanged="onDiameterChanged" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_minDiameter3Title"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_minDiameter3Title"
+          imeTitle="$l10n_ui_WoodHarvesterControls_minDiameter3Title">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_minDiameter3TT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_minDiameter3Title" />
+      </Bitmap>
+
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="buckingLength4"
+          onTextChanged="onLengthChanged" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_buckingLength4Title"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_buckingLength4Title"
+          imeTitle="$l10n_ui_WoodHarvesterControls_buckingLength4Title">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_buckingLength4TT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_buckingLength4Title" />
+      </Bitmap>
+
+      <!-- AUTOMATIC PROGRAM -->
+      <Text profile="fs25_settingsSectionHeader" name="sectionHeader"
+        text="$l10n_ui_WoodHarvesterControls_sectionAutomaticProgram" />
+
+      <!-- automatic program feeding -->
+      <Bitmap profile="fs25_multiTextOptionContainer" id="autoProgramFeedingSettingBox">
+        <MultiTextOption profile="fs25_settingsMultiTextOption"
+          onClick="onClickAutomaticProgramFeeding"
+          id="autoProgramFeedingSetting">
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_autoProgramFeedingTT" />
+        </MultiTextOption>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_autoProgramFeedingTitle" />
+      </Bitmap>
+
+      <!-- automatic program felling cut -->
+      <Bitmap profile="fs25_multiTextOptionContainer" id="autoProgramFellingCutSettingBox">
+        <MultiTextOption profile="fs25_settingsMultiTextOption"
+          id="autoProgramFellingCutSetting">
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_autoProgramFellingCutTT" />
+        </MultiTextOption>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_autoProgramFellingCutTitle" />
+      </Bitmap>
+
+      <!-- automatic program bucking cut -->
+      <Bitmap profile="fs25_multiTextOptionContainer" id="autoProgramBuckingCutSettingBox">
+        <MultiTextOption profile="fs25_settingsMultiTextOption"
+          id="autoProgramBuckingCutSetting">
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_autoProgramBuckingCutTT" />
+        </MultiTextOption>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_autoProgramBuckingCutTitle" />
+      </Bitmap>
+
+      <!-- automatic program with close button -->
+      <Bitmap profile="fs25_multiTextOptionContainer" id="automaticWithCloseButtonSettingBox">
+        <BinaryOption profile="fs25_settingsBinaryOption"
+          id="automaticWithCloseButtonSetting">
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_automaticWithCloseButtonTT" />
+        </BinaryOption>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_automaticWithCloseButtonTitle" />
+      </Bitmap>
+
+      <!-- Automatic feed after cut -->
+      <Bitmap profile="fs25_multiTextOptionContainer" id="automaticFeedSettingBox">
+        <BinaryOption profile="fs25_settingsBinaryOption"
+          id="automaticFeedSetting">
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_automaticFeedTT" />
+        </BinaryOption>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_automaticFeedTitle" />
+      </Bitmap>
+
+      <!-- ROTATOR -->
+      <Text profile="fs25_settingsSectionHeader" name="sectionHeader"
+        text="$l10n_ui_WoodHarvesterControls_sectionRotator" />
+
+      <!-- rotator mode -->
+      <Bitmap profile="fs25_multiTextOptionContainer" id="rotatorModeSettingBox">
+        <MultiTextOption profile="fs25_settingsMultiTextOption"
+          onClick="onClickRotatorMode"
+          id="rotatorModeSetting">
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_rotatorModeTT" />
+        </MultiTextOption>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_rotatorModeTitle" />
+      </Bitmap>
+
+      <!-- rotator force -->
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="rotatorForce"
+          onTextChanged="ensurePositiveNumber" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_rotatorForceTitle"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_rotatorForceTitle"
+          imeTitle="$l10n_ui_WoodHarvesterControls_rotatorForceTitle">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_rotatorForceTT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_rotatorForceTitle" />
+      </Bitmap>
+
+      <!-- rotator threshold -->
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="rotatorThreshold"
+          onTextChanged="ensurePositiveNumber" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_rotatorThresholdTitle"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_rotatorThresholdTitle"
+          imeTitle="$l10n_ui_WoodHarvesterControls_rotatorThresholdTitle">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_rotatorThresholdTT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_rotatorThresholdTitle" />
+      </Bitmap>
+
+      <!-- SAW -->
+      <Text profile="fs25_settingsSectionHeader" name="sectionHeader"
+        text="$l10n_ui_WoodHarvesterControls_sectionSaw" />
+
+      <!-- saw mode -->
+      <Bitmap profile="fs25_multiTextOptionContainer" id="sawModeSettingBox">
+        <MultiTextOption profile="fs25_settingsMultiTextOption"
+          id="sawModeSetting">
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_sawModeTT" />
+        </MultiTextOption>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_sawModeTitle" />
+      </Bitmap>
+
+      <!-- LENGTH PRESETS -->
+      <Text profile="fs25_settingsSectionHeader" name="sectionHeader"
+        text="$l10n_ui_WoodHarvesterControls_sectionLengthPresets" />
+
+      <!-- length preset 1 -->
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="lengthPreset1"
+          onTextChanged="onLengthChanged" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_lengthPreset1Title"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_lengthPreset1Title"
+          imeTitle="$l10n_ui_WoodHarvesterControls_lengthPreset1Title">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_lengthPreset1TT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_lengthPreset1Title" />
+      </Bitmap>
+
+      <!-- length preset 2 -->
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="lengthPreset2"
+          onTextChanged="onLengthChanged" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_lengthPreset2Title"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_lengthPreset2Title"
+          imeTitle="$l10n_ui_WoodHarvesterControls_lengthPreset2Title">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_lengthPreset2TT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_lengthPreset2Title" />
+      </Bitmap>
+
+      <!-- length preset 3 -->
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="lengthPreset3"
+          onTextChanged="onLengthChanged" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_lengthPreset3Title"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_lengthPreset3Title"
+          imeTitle="$l10n_ui_WoodHarvesterControls_lengthPreset3Title">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_lengthPreset3TT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_lengthPreset3Title" />
+      </Bitmap>
+
+      <!-- length preset 4 -->
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="lengthPreset4"
+          onTextChanged="onLengthChanged" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_lengthPreset4Title"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_lengthPreset4Title"
+          imeTitle="$l10n_ui_WoodHarvesterControls_lengthPreset4Title">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_lengthPreset4TT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_lengthPreset4Title" />
+      </Bitmap>
+
+      <!-- repeat length preset -->
+      <Bitmap profile="fs25_multiTextOptionContainer" id="repeatLengthPresetSettingBox">
+        <BinaryOption profile="fs25_settingsBinaryOption"
+          id="repeatLengthPresetSetting">
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_repeatLengthPresetTT" />
+        </BinaryOption>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_repeatLengthPresetTitle" />
+      </Bitmap>
+
+      <!-- FEEDING -->
+      <Text profile="fs25_settingsSectionHeader" name="sectionHeader"
+        text="$l10n_ui_WoodHarvesterControls_sectionFeeding" />
+
+      <!-- braking distance -->
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="breakingDistance"
+          onTextChanged="onLengthChanged" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_breakingDistanceTitle"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_breakingDistanceTitle"
+          imeTitle="$l10n_ui_WoodHarvesterControls_breakingDistanceTitle">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_breakingDistanceTT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_breakingDistanceTitle" />
+      </Bitmap>
+
+      <!-- slow feed when tilted up -->
+      <Bitmap profile="fs25_multiTextOptionContainer" id="slowFeedingTiltedUpSettingBox">
+        <BinaryOption profile="fs25_settingsBinaryOption"
+          id="slowFeedingTiltedUpSetting">
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_slowFeedingTiltedUpTT" />
+        </BinaryOption>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_slowFeedingTiltedUpTitle" />
+      </Bitmap>
+
+      <!-- feeding speed -->
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="feedingSpeed"
+          onTextChanged="onFeedingSpeedChanged" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_feedingSpeedTitle"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_feedingSpeedTitle"
+          imeTitle="$l10n_ui_WoodHarvesterControls_feedingSpeedTitle">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_feedingSpeedTT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_feedingSpeedTitle" />
+      </Bitmap>
+
+      <!-- slow feeding speed -->
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="slowFeedingSpeed"
+          onTextChanged="onFeedingSpeedChanged" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_slowFeedingSpeedTitle"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_slowFeedingSpeedTitle"
+          imeTitle="$l10n_ui_WoodHarvesterControls_slowFeedingSpeedTitle">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_slowFeedingSpeedTT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_slowFeedingSpeedTitle" />
+      </Bitmap>
+
+      <!-- TILT -->
+      <Text profile="fs25_settingsSectionHeader" name="sectionHeader"
+        text="$l10n_ui_WoodHarvesterControls_sectionTilt" />
+
+      <!-- tilt down on felling cut -->
+      <Bitmap profile="fs25_multiTextOptionContainer" id="tiltDownOnFellingCutSettingBox">
+        <BinaryOption profile="fs25_settingsBinaryOption"
+          id="tiltDownOnFellingCutSetting">
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_tiltDownOnFellingCutTT" />
+        </BinaryOption>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_tiltDownOnFellingCutTitle" />
+      </Bitmap>
+
+      <!-- tilt up with open button -->
+      <Bitmap profile="fs25_multiTextOptionContainer" id="tiltUpWithOpenButtonSettingBox">
+        <BinaryOption profile="fs25_settingsBinaryOption"
+          onClick="onClickTiltUpWithOpenButton"
+          id="tiltUpWithOpenButtonSetting">
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_tiltUpWithOpenButtonTT" />
+        </BinaryOption>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_tiltUpWithOpenButtonTitle" />
+      </Bitmap>
+
+      <!-- tilt up delay -->
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="tiltUpDelay"
+          onTextChanged="ensurePositiveNumber" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_tiltUpDelayTitle"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_tiltUpDelayTitle"
+          imeTitle="$l10n_ui_WoodHarvesterControls_tiltUpDelayTitle">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_tiltUpDelayTT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_tiltUpDelayTitle" />
+      </Bitmap>
+
+      <!-- max tilt angle -->
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="tiltMaxAngle"
+          onTextChanged="ensurePositiveNumber" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_tiltMaxAngleTitle"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_tiltMaxAngleTitle"
+          imeTitle="$l10n_ui_WoodHarvesterControls_tiltMaxAngleTitle">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_tiltMaxAngleTT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_tiltMaxAngleTitle" />
+      </Bitmap>
+
+      <!-- USER PREFERENCES -->
+      <Text profile="fs25_settingsSectionHeader" name="sectionHeader"
+        text="$l10n_ui_WoodHarvesterControls_sectionUserPreferences" />
+
+      <!-- register sound -->
+      <Bitmap profile="fs25_multiTextOptionContainer" id="registerSoundSettingBox">
+        <BinaryOption profile="fs25_settingsBinaryOption"
+          id="registerSoundSetting">
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_registerSoundTT" />
+        </BinaryOption>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_registerSoundTitle" />
+      </Bitmap>
+
+      <!-- remove small logs -->
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="maxRemovingLength"
+          onTextChanged="onLengthChanged" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_maxRemovingLengthTitle"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_maxRemovingLengthTitle"
+          imeTitle="$l10n_ui_WoodHarvesterControls_maxRemovingLengthTitle">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_maxRemovingLengthTT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_maxRemovingLengthTitle" />
+      </Bitmap>
+
+      <!-- register sound -->
+      <Bitmap profile="fs25_multiTextOptionContainer" id="allSplitTypeSettingBox">
+        <BinaryOption profile="fs25_settingsBinaryOption"
+          id="allSplitTypeSetting">
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_allSplitTypeTT" />
+        </BinaryOption>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_allSplitTypeTitle" />
+      </Bitmap>
+
+    </ScrollingLayout>
+    <Bitmap profile="fs25_settingsTooltipSeparator" />
+    <Bitmap profile="fs25_startClipper" name="topClipper" />
+    <Bitmap profile="fs25_stopClipper" name="bottomClipper" />
+  </GuiElement>
+  <ThreePartBitmap profile="fs25_sliderDockedBg">
+    <ThreePartBitmap profile="fs25_sliderDockedBox">
+      <Slider profile="fs25_sliderDocked" dataElementId="boxLayout" />
+    </ThreePartBitmap>
+  </ThreePartBitmap>
+
+  <BoxLayout profile="fs25_buttonBox" id="whc_buttonsPanel">
+    <Button profile="buttonBack" id="noButton" text="$l10n_button_back"
+      onClick="onClickBack">
+      <Bitmap profile="fs25_buttonBoxSeparator" name="separator" />
+    </Button>
+    <Button profile="buttonOK" id="yesButton" text="$l10n_button_ok"
+      onClick="onClickOk">
+      <Bitmap profile="fs25_buttonBoxSeparator" name="separator" />
+    </Button>
+  </BoxLayout>
+</GUI>

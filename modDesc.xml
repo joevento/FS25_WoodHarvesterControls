@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="92">
+    <author>Bargon Mods</author>
+    <version>0.1.0.0</version>
+    <title>
+        <en>Wood Harvester Controls</en>
+        <de>Holzvollernter-Steuerungen</de>
+    </title>
+
+    <description>
+        <en>
+            <![CDATA[Ready to feel how wood harvesters are controlled in real life?
+
+This script mod overrides the wood harvesters specialization. 
+It is based on real life harvester control systems and implements most of the functionalities.
+Adds new controls and a menu to customize how the machine works and even set whether you want to use help features or not.
+
+Some of the features:
+- Open and close the head. Grab and release the tree
+- Manual feed forward and backward. Also in slow mode
+- Tilt up and down the head
+- Automatic program that allows feeding and cutting in different ways depending on the options set in the menu
+- Length preset buttons
+- Help functions
+- Bucking system that chooses the length according to the diameter of the log
+- Rotator modes to be able to rotate the head while you are processing
+- Saw modes
+
+Menu - Easy controls:
+- Automatic program with cut button [ On / Off ]
+- Automatic tilt up [ On / Off ]
+- Automatic open [ On / Off ]
+- Grab tree after cut [ On / Off ]
+
+Menu - Cutting lengths (automatic program):
+- Number of lengths [ 1 - 4 ]
+- Cutting Length 1 (cm) [ Custom length ]
+- Minimum Diameter 1 (cm) [ Custom diameter ]
+- Cutting Length 2 (cm) [ Custom length ]
+- Minimum Diameter 2 (cm) [ Custom diameter ]
+- Cutting Length 3 (cm) [ Custom length ]
+- Minimum Diameter 3 (cm) [ Custom diameter ]
+- Cutting Length 4 (cm) [ Custom length ]
+
+Menu - Automatic program:
+- Feeding [ Single press / Hold]
+- Felling Cut [ Off / Single press / Hold ]
+- Bucking Cut [ Off / Single press / Hold ]
+- Automatic program with close button [ On / Off ]
+- Automatic feed after cut  [ On / Off ]
+
+Menu - Rotator:
+- Rotator Mode [ Free / Fixed / Physical ]
+- Rotator Force [ Custom number ]
+- Rotator Threshold [ Custom angle ]
+
+Menu - Length Presets:
+- Length Preset 1 (cm) [ Custom length ]
+- Length Preset 2 (cm) [ Custom length ]
+- Length Preset 3 (cm) [ Custom length ]
+- Length Preset 4 (cm) [ Custom length ]
+- Repeat length preset [ On / Off ]
+
+Menu - Saw:
+- Saw mode [ Automatic / Semiautomatic / Manual ]
+
+Menu - Feeding:
+- Braking distance (cm) [ Custom length ]
+- Slow feed when tilted up [ On / Off ]
+- Feeding speed (m/s) [ Custom speed ]
+- Slow feeding speed (m/s) [ Custom speed]
+
+Menu - Tilt:
+- Tilt down on felling cut [ On / Off ]
+- Tilt up with open button [ On / Off ]
+- Tilt up delay (ms) [ Custom time ]
+- Max tilt angle [ Custom angle ]
+
+Menu - User Preferences:
+- Register found sounds [ On / Off ]
+- Remove logs smaller than (cm) [ Custom length ]
+- Support all trees [ On / Off ]
+]]>
+        </en>
+        <de>
+            <![CDATA[Bereit zu erleben wie sich eine Holzerntemaschine im echten Leben anfühlt?
+
+Dieser Script Mod überschreibt die Holzvollernter Spezialization
+Er basiert auf echten Bedienelementen für Holzvollernter und implementiert die meisten ihrer Funktionen.
+Neue Steuerungen und mein Menü zur Anpassung des Arbeitsgeräts sowie optionale Hilfsfunktionen wurden hinzugefügt.
+
+Einige der Funktionen:
+- Öffnen und Schließen des Fällkopfes. Greifen und Lösen von Bäumen
+- Manuelle Zufuhr vorwärts und rückwärts. Sowie eine langsame Zufuhr
+- Hoch- und abkippen des Fällkopfes
+- Automatikprogramm das es erlaubt Zufuhr und Schnitt auf verschiedene Arten durchzuführen, konfigurierbar über das Optionsmenü
+- Tastenbelegung für Längen-Sortimente
+- Hilfsfunktionen
+- Sortierung auf Längen entsprechend dem Durchmesser des Stammes
+- Die Rotation des Fällkopfes kann durch mehrere Modi während des Erntens gesteuert werden
+- Sägen Modi
+
+Menü - Vereinfachte Steuerung:
+- Automatikprogramm mit Schnitt-Taste [ An / Aus ]
+- Automtisches Hochkippen [ An / Aus ]
+- Automatisches Öffnen [ An / Aus ]
+- Baum nach Schnitt greifen [ An / Aus ]
+
+Menü - Schnittlängen (Automatikprogramm):
+- Anzahl der Längen [ 1 - 4 ]
+- Schnittlänge 1 (cm) [ einstellbare Länge ]
+- Mindest Durchmesser 1 (cm) [ einstellbarer Durchmesser ]
+- Schnittlänge 2 (cm) [ einstellbare Länge ]
+- Mindest Durchmesser 2 (cm) [ einstellbarer Durchmesser ]
+- Schnittlänge 3 (cm) [ einstellbare Länge ]
+- Mindest Durchmesser 3 (cm) [ einstellbarer Durchmesser ]
+- Schnittlänge 4 (cm) [ einstellbare Länge ]
+
+Menü - Automatikprogramm:
+- Zufuhr [ Drücken / Halten ]
+- Fällschnitt [ Aus / Drücken / Halten ]
+- Sortierschnitt [ Aus / Drücken / Halten ]
+- Automatikprogramm mit Schließen-Taste [ An / Aus ]
+- Automatische Zufuhr nach dem Schnitt [ An / Aus ]
+
+Menü - Rotation:
+- Rotationsmodus [ Frei / Fixiert / Physikalisch]
+- Rotationskraft [ frei einstellbar ]
+- Rotationsgrenze [ einstellbarer Winkel ]
+
+Menü - Längen-Sortimente:
+- Längen-Sortimnet 1 (cm) [ einstellbare Länge ]
+- Längen-Sortimnet 2 (cm) [ einstellbare Länge ]
+- Längen-Sortimnet 3 (cm) [ einstellbare Länge ]
+- Längen-Sortimnet 4 (cm) [ einstellbare Länge ]
+- Längen-Sortimnet wiederholen [ An / Aus ]
+
+Menü - Säge:
+- Sägen-Modus [ Automatik / Halbautomatik / Manuell ]
+
+Menü - Zufuhr:
+- Bremsabstand (cm) [ einstellbare Länge ]
+- Langsame Zufuhr bei hochgekipptem Fällkopf [ An / Aus ]
+- Zufuhrgeschwindigkeit (m/s) [ einstellbare Geschwindigkeit ]
+- Langsame Zufuhrgeschwindigkeit (m/s) [ einstellbare Geschwindigkeit ]
+
+Menü - Kippen:
+- Abkippen nach Fällschnitt [ An / Aus ]
+- Hochkippen mit Öffnen-Taste [ An / Aus ]
+- Verzögerung Hochkippen (ms) [ einstellbare Zeit ]
+- Maximaler Neigungswinkel [ einstellbarer Winkel ]
+
+Menü - Benutzer Einstellungen:
+- Gefundene Soundeffekte registrieren [ An / Aus ]
+- Stämme unter Durchmesser entfernen (cm) [ einstellbare Länge ]
+- Alle Bäume unterstützen [ An / Aus ]
+]]>
+    </de>
+    </description>
+    <iconFilename>icon_whc.dds</iconFilename>
+    <multiplayer supported="true"></multiplayer>
+
+    <extraSourceFiles>
+        <sourceFile filename="src/WoodHarvesterControls_Loader.lua" />
+    </extraSourceFiles>
+
+    <l10n filenamePrefix="translations/l10n" />
+
+    <actions>
+        <action name="WOOD_HARVESTER_CONTROLS_TURN_ON_OFF_HEAD" category="VEHICLE" axisType="HALF"
+            ignoreComboMask="false" />
+        <action name="WOOD_HARVESTER_CONTROLS_SAW" category="VEHICLE" axisType="HALF"
+            ignoreComboMask="false" />
+
+        <action name="WOOD_HARVESTER_CONTROLS_CLOSE_HEAD" category="VEHICLE" axisType="HALF"
+            ignoreComboMask="false" />
+        <action name="WOOD_HARVESTER_CONTROLS_OPEN_HEAD" category="VEHICLE" axisType="HALF"
+            ignoreComboMask="false" />
+        <action name="WOOD_HARVESTER_CONTROLS_OPEN_CLOSE_HEAD" category="VEHICLE" axisType="HALF"
+            ignoreComboMask="false" />
+
+        <action name="WOOD_HARVESTER_CONTROLS_FORWARD_FEED" category="VEHICLE" axisType="HALF"
+            ignoreComboMask="false" />
+        <action name="WOOD_HARVESTER_CONTROLS_BACKWARD_FEED" category="VEHICLE" axisType="HALF"
+            ignoreComboMask="false" />
+        <action name="WOOD_HARVESTER_CONTROLS_SLOW_FORWARD_FEED" category="VEHICLE" axisType="HALF"
+            ignoreComboMask="false" />
+        <action name="WOOD_HARVESTER_CONTROLS_SLOW_BACKWARD_FEED" category="VEHICLE" axisType="HALF"
+            ignoreComboMask="false" />
+
+        <action name="WOOD_HARVESTER_CONTROLS_AUTOMATIC_PROGRAM" category="VEHICLE" axisType="HALF"
+            ignoreComboMask="false" />
+        <action name="WOOD_HARVESTER_CONTROLS_STOP" category="VEHICLE" axisType="HALF"
+            ignoreComboMask="false" />
+
+        <action name="WOOD_HARVESTER_CONTROLS_TILT_UP_HEAD" category="VEHICLE" axisType="HALF"
+            ignoreComboMask="false" />
+        <action name="WOOD_HARVESTER_CONTROLS_TILT_DOWN_HEAD" category="VEHICLE" axisType="HALF"
+            ignoreComboMask="false" />
+        <action name="WOOD_HARVESTER_CONTROLS_TILT_UP_DOWN_HEAD" category="VEHICLE" axisType="HALF"
+            ignoreComboMask="false" />
+
+        <action name="WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_1" category="VEHICLE" axisType="HALF"
+            ignoreComboMask="false" />
+        <action name="WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_2" category="VEHICLE" axisType="HALF"
+            ignoreComboMask="false" />
+
+        <action name="WOOD_HARVESTER_CONTROLS_MENU" category="VEHICLE" axisType="HALF"
+            ignoreComboMask="false" />
+    </actions>
+
+    <inputBinding>
+        <actionBinding action="WOOD_HARVESTER_CONTROLS_MENU">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_y" />
+            <binding device="GAMEPAD_DEFAULT" input="BUTTON_5 BUTTON_4" />
+        </actionBinding>
+        <actionBinding action="WOOD_HARVESTER_CONTROLS_SAW">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_x" />
+            <binding device="GAMEPAD_DEFAULT" input="BUTTON_5 BUTTON_2" />
+        </actionBinding>
+        <actionBinding action="WOOD_HARVESTER_CONTROLS_CLOSE_HEAD">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lshift KEY_z" />
+            <binding device="GAMEPAD_DEFAULT" input="BUTTON_5 BUTTON_19" />
+        </actionBinding>
+        <actionBinding action="WOOD_HARVESTER_CONTROLS_OPEN_HEAD">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lalt KEY_z" />
+            <binding device="GAMEPAD_DEFAULT" input="BUTTON_6 BUTTON_19" />
+        </actionBinding>
+        <actionBinding action="WOOD_HARVESTER_CONTROLS_FORWARD_FEED">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lshift KEY_w" />
+            <binding device="GAMEPAD_DEFAULT" input="BUTTON_5 BUTTON_20" />
+        </actionBinding>
+        <actionBinding action="WOOD_HARVESTER_CONTROLS_BACKWARD_FEED">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lshift KEY_s" />
+            <binding device="GAMEPAD_DEFAULT" input="BUTTON_5 BUTTON_18" />
+        </actionBinding>
+        <actionBinding action="WOOD_HARVESTER_CONTROLS_AUTOMATIC_PROGRAM">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lshift KEY_x" />
+            <binding device="GAMEPAD_DEFAULT" input="BUTTON_5 BUTTON_3" />
+        </actionBinding>
+        <actionBinding action="WOOD_HARVESTER_CONTROLS_TILT_UP_DOWN_HEAD">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lshift KEY_v" />
+            <binding device="GAMEPAD_DEFAULT" input="BUTTON_5 BUTTON_6 BUTTON_19" />
+        </actionBinding>
+    </inputBinding>
+</modDesc>

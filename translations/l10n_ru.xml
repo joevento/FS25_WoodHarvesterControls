@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l10n>
+        <translationContributors>nagor</translationContributors>
+
+        <texts>
+                <!-- input bindings -->
+                <text name="input_WOOD_HARVESTER_CONTROLS_TURN_ON_OFF_HEAD"
+                        text="Вкл/Выкл харвестерную головку" />
+                <text name="input_WOOD_HARVESTER_CONTROLS_SAW" text="Запустить пилу (Отпилить)" />
+
+                <text name="input_WOOD_HARVESTER_CONTROLS_CLOSE_HEAD"
+                        text="Закрыть харвестерную головку (Захватить дерево)" />
+                <text name="input_WOOD_HARVESTER_CONTROLS_OPEN_HEAD"
+                        text="Открыть харвестерную головку (Отпустить дерево)" />
+                <text name="input_WOOD_HARVESTER_CONTROLS_OPEN_CLOSE_HEAD"
+                        text="Открыть/Закрыть харв. головку (Отпустить/Захватить дерево)" />
+
+                <text name="input_WOOD_HARVESTER_CONTROLS_FORWARD_FEED"
+                        text="Ручная протяжка дерева вперёд" />
+                <text name="input_WOOD_HARVESTER_CONTROLS_BACKWARD_FEED"
+                        text="Ручная протяжка дерева назад" />
+                <text name="input_WOOD_HARVESTER_CONTROLS_SLOW_FORWARD_FEED"
+                        text="Медленная ручная протяжка дерева вперёд" />
+                <text name="input_WOOD_HARVESTER_CONTROLS_SLOW_BACKWARD_FEED"
+                        text="Медленная ручная протяжка дерева назад" />
+
+                <text name="input_WOOD_HARVESTER_CONTROLS_AUTOMATIC_PROGRAM"
+                        text="Протяжка/отрезание (автопрограмма)" />
+                <text name="input_WOOD_HARVESTER_CONTROLS_STOP" text="Остановить протяжку" />
+
+                <text name="input_WOOD_HARVESTER_CONTROLS_TILT_UP_HEAD"
+                        text="Повернуть харвестерную головку вверх" />
+                <text name="input_WOOD_HARVESTER_CONTROLS_TILT_DOWN_HEAD"
+                        text="Повернуть харвестерную головку вниз" />
+                <text name="input_WOOD_HARVESTER_CONTROLS_TILT_UP_DOWN_HEAD"
+                        text="Повернуть харвестерную головку Вверх/Вниз" />
+
+                <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_1"
+                        text="Протяжка на длину 1 / 2" />
+                <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_2"
+                        text="Протяжка на длину 3 / 4" />
+
+                <text name="input_WOOD_HARVESTER_CONTROLS_MENU"
+                        text="Открыть настройки Wood Harvester Controls" />
+
+                <!-- warning messages -->
+                <text name="warning_turnOnHead" text="Сначала включите харвестерную головку" />
+
+                <!-- actions -->
+                <text name="action_saw" text="Запустить пилу (Отпилить)"></text>
+                <text name="action_feedCutAutomaticProgram"
+                        text="Протяжка/отрезание (автопрограмма)"></text>
+                <text name="action_openWoodHarvesterControlsMenu"
+                        text="Открыть настройки Wood Harvester Controls" />
+                <text name="action_feedToPreset" text="Протяжка на %.1f m / %.1f m" />
+
+                <!-- menu -->
+                <text name="ui_WoodHarvesterControls_guiTitle"
+                        text="Настройки Wood Harvester Controls" />
+
+                <text name="ui_WoodHarvesterControls_on" text="Вкл" />
+                <text name="ui_WoodHarvesterControls_off" text="Выкл" />
+
+                <text name="ui_WoodHarvesterControls_press" text="Одним нажатием" />
+                <text name="ui_WoodHarvesterControls_hold" text="Удерживать" />
+
+                <text name="ui_WoodHarvesterControls_automatic" text="Автоматический" />
+                <text name="ui_WoodHarvesterControls_semiautomatic" text="Полуавтоматический" />
+                <text name="ui_WoodHarvesterControls_manual" text="Ручной" />
+
+                <text name="ui_WoodHarvesterControls_free" text="Свободный" />
+                <text name="ui_WoodHarvesterControls_fixed" text="Улучшенный" />
+                <text name="ui_WoodHarvesterControls_physical" text="Физический" />
+
+                <text name="ui_WoodHarvesterControls_helpMsg"
+                        text="В меню справки вы можете найти больше информации об этом моде и узнать о передовых методах из реальной жизни." />
+
+                <text name="ui_WoodHarvesterControls_backMenuWarning"  text="ВНИМАНИЕ!
+Вы уверены, что хотите отменить изменения?" />
+                <text name="ui_WoodHarvesterControls_discardChanges" text="Отбросьте изменения" />
+                <text name="ui_WoodHarvesterControls_keepEditing" text="Продолжайте редактировать" />
+
+                <!-- Easy Controls -->
+                <text name="ui_WoodHarvesterControls_sectionEasyControls" text="Простое управление" />
+
+                <text name="ui_WoodHarvesterControls_automaticWithCutButtonTitle"
+                        text="Автопрограмма с кнопкой отреза" />
+                <text name="ui_WoodHarvesterControls_automaticWithCutButtonTT"
+                        text="Вкл: Кнопка отреза работает так же, как и кнопка автоматической программы. Протяжка и отрезы зависят от настроек (см. раздел Автоматическая программа).
+Выкл: Как и в реальной жизни, кнопка отреза активирует только пилу." />
+
+                <text name="ui_WoodHarvesterControls_automaticTiltUpTitle"
+                        text="Автоматический поворот" />
+                <text name="ui_WoodHarvesterControls_automaticTiltUpTT"
+                        text="Вкл: После освобождения ствола харвестерная головка поворачивается (только если она была поднята до валки дерева).
+Выкл: Как и в реальной жизни, харвестерную головку необходимо повернуть с помощью кнопок поворота или удерживая кнопку открытия." />
+
+                <text name="ui_WoodHarvesterControls_automaticOpenTitle"
+                        text="Автоматическое открытие" />
+                <text name="ui_WoodHarvesterControls_automaticOpenTT"
+                        text="Вкл: Харвестерная головка открывается при включении и освобождении бревна.
+Выкл: Как и в реальной жизни, харвестерная головка должна быть открыта с помощью кнопки Открыть." />
+
+                <text name="ui_WoodHarvesterControls_grabOnCutTitle"
+                        text="Захватить дерево после спила" />
+                <text name="ui_WoodHarvesterControls_grabOnCutTT"
+                        text="Вкл: дерево схвачено после валки.
+Выкл: Как и в реальной жизни, дерево нужно схватить, удерживая кнопку закрытия, а затем спилить." />
+
+                <!-- Bucking system -->
+                <text name="ui_WoodHarvesterControls_sectionBuckingSystem"
+                        text="Длина отреза (автопрограмма)" />
+
+                <text name="ui_WoodHarvesterControls_numberOfAssortmentsTitle"
+                        text="Количество частей" />
+                <text name="ui_WoodHarvesterControls_numberOfAssortmentsTT"
+                        text="Устанавливает количество частей различной длины, на которые можно распилить дерево в зависимости от диаметров брёвен." />
+
+                <text name="ui_WoodHarvesterControls_buckingLength1Title" text="Длина отреза 1 (см)" />
+                <text name="ui_WoodHarvesterControls_buckingLength1TT"
+                        text="Устанавливает длину брёвен, на которую будут распиливаться деревья диаметром больше 'Минимального диаметра 1'." />
+                <text name="ui_WoodHarvesterControls_minDiameter1Title"
+                        text="Минимальный диаметр 1 (см)" />
+                <text name="ui_WoodHarvesterControls_minDiameter1TT"
+                        text="Устанавливает минимальный диаметр для 'Длины отреза 1'." />
+
+                <text name="ui_WoodHarvesterControls_buckingLength2Title" text="Длина отреза 2 (см)" />
+                <text name="ui_WoodHarvesterControls_buckingLength2TT"
+                        text="Устанавливает длину брёвен, на которую будут распиливаться деревья диаметром больше 'Минимального диаметра 2'." />
+                <text name="ui_WoodHarvesterControls_minDiameter2Title"
+                        text="Минимальный диаметр 2 (см) (должен быть меньше Минимального диаметра 1)" />
+                <text name="ui_WoodHarvesterControls_minDiameter2TT"
+                        text="Устанавливает минимальный диаметр для 'Длины отреза 2'." />
+
+                <text name="ui_WoodHarvesterControls_buckingLength3Title" text="Длина отреза 3 (см)" />
+                <text name="ui_WoodHarvesterControls_buckingLength3TT"
+                        text="Устанавливает длину брёвен, на которую будут распиливаться деревья диаметром больше 'Минимального диаметра 3'." />
+                <text name="ui_WoodHarvesterControls_minDiameter3Title"
+                        text="Минимальный диаметр 3 (см)) (должен быть меньше Минимального диаметра 2)" />
+                <text name="ui_WoodHarvesterControls_minDiameter3TT"
+                        text="Устанавливает минимальный диаметр для 'Длины отреза 3'." />
+
+                <text name="ui_WoodHarvesterControls_buckingLength4Title" text="Длина отреза 4 (см)" />
+                <text name="ui_WoodHarvesterControls_buckingLength4TT"
+                        text="Устанавливает длину брёвен, на которую будут распиливаться деревья диаметром меньше 'Минимального диаметра 3'." />
+
+                <!-- automatic program -->
+                <text name="ui_WoodHarvesterControls_sectionAutomaticProgram"
+                        text="Автоматические программы" />
+
+                <text name="ui_WoodHarvesterControls_autoProgramFeedingTitle" text="Протяжка" />
+                <text name="ui_WoodHarvesterControls_autoProgramFeedingTT"
+                        text="Одно нажатие: ствол подаётся на заданную длину. Если кнопку удерживать, протяжка останавливается и продолжается только после отпускания кнопки. Удерживание: ствол подаётся только при удерживании кнопки. Если кнопка отпущена или достигнута заданная длина, то протяжка останавливается." />
+
+                <text name="ui_WoodHarvesterControls_autoProgramFellingCutTitle"
+                        text="Валочный пропил" />
+                <text name="ui_WoodHarvesterControls_autoProgramFellingCutTT"
+                        text="Выкл: Кнопка автоуправления не работает, когда харвестерная головка повёрнута и готова спилить дерево. Одно нажатие: дерево спиливается. Удерживание: пила работает только до тех пор, пока удерживается кнопка. Если кнопку отпустить, то дерево не будет спилено." />
+
+                <text name="ui_WoodHarvesterControls_autoProgramBuckingCutTitle"
+                        text="Сортировочный срез" />
+                <text name="ui_WoodHarvesterControls_autoProgramBuckingCutTT"
+                        text="Выкл: Автокнопка не работает, когда достигнута заданная длина и харвестерная головка готова к резке. Одно нажатие: ствол полностью разрезается. Удерживание: пила работает только при удерживании кнопки. Если кнопку отпустить, то ствол не будет разрезан." />
+
+                <text name="ui_WoodHarvesterControls_automaticWithCloseButtonTitle"
+                        text="Автопрограмма с кнопкой закрытия" />
+                <text name="ui_WoodHarvesterControls_automaticWithCloseButtonTT"
+                        text="В настоящих лесозаготовительных комбайнах с небольшими органами управления автоматическая программа часто активируется нажатием кнопки закрытия (при полном закрытии харвестерной головки)." />
+
+                <text name="ui_WoodHarvesterControls_automaticFeedTitle"
+                        text="Автоматическая протяжка после резки" />
+                <text name="ui_WoodHarvesterControls_automaticFeedTT"
+                        text="Если опция активна, протяжка начнётся, как только пила вернётся в исходное положение.
+Эта опция недоступна, если опция автоматической протяжки, в программе, установлена на Удержание." />
+
+                <!-- Rotator -->
+                <text name="ui_WoodHarvesterControls_sectionRotator" text="Вращение" />
+
+                <text name="ui_WoodHarvesterControls_rotatorModeTitle" text="Режимы вращения" />
+                <text name="ui_WoodHarvesterControls_rotatorModeTT"
+                        text="Свободный (по умолчанию): харвестерную головку нельзя вращать, удерживая бревно. Улучшенный: Головку можно вращать, но нужно обращать внимание на поворот. Физический: Экспериментальное моделирование физически корректной силы вращения головки." />
+
+                <text name="ui_WoodHarvesterControls_rotatorModeWarning"
+                        text="ВНИМАНИЕ!
+Режим физического вращения обеспечивает ниболее реалистичное поведение харвестерной головки, но зависит от структуры узла транспортного средства, поэтому он может не работать на некоторых модифицированных комбайнах. 
+Если транспортное средство ведёт себя странно, следует отключить опцию и при необходимости перезагрузить транспортное средство." />
+                <text name="ui_WoodHarvesterControls_confirm" text="Подтвердите" />
+                <text name="ui_WoodHarvesterControls_goBack" text="Вернуться" />
+
+                <text name="ui_WoodHarvesterControls_rotatorForceTitle" text="Сила вращения" />
+                <text name="ui_WoodHarvesterControls_rotatorForceTT"
+                        text="Определяет силу вращающего устройства. Если харвестерной головке не хватает мощности, она не может повернуться. Кроме того, харвестерная головка уступает нагрузке от брёвен в соответствии с её мощностью и весом дерева и обновляет своё вращение в соответствии с пределом вращения." />
+
+                <text name="ui_WoodHarvesterControls_rotatorThresholdTitle" text="Предел вращения" />
+                <text name="ui_WoodHarvesterControls_rotatorThresholdTT"
+                        text="Определяет предел поворота в градусах. Если харвестерная головка часто застревает, следует увеличить предел вращения. (Чем ниже предел, тем точнее). (Если чувствительность управления высока, предел вращения следует увеличить, чтобы обеспечить плавное поведение.)." />
+
+
+                <!-- length presets -->
+                <text name="ui_WoodHarvesterControls_sectionLengthPresets" text="Предустановки длин" />
+
+                <text name="ui_WoodHarvesterControls_lengthPreset1Title" text="Длина 1 (см)" />
+                <text name="ui_WoodHarvesterControls_lengthPreset1TT"
+                        text="Определяет длину протяжки при нажатии кнопки 'Протяжка на длину 1 / 2'." />
+
+                <text name="ui_WoodHarvesterControls_lengthPreset2Title" text="Длина 2 (см)" />
+                <text name="ui_WoodHarvesterControls_lengthPreset2TT"
+                        text="Определяет длину протяжки при двойном нажатии кнопки 'Протяжка на длину 1 / 2'." />
+
+                <text name="ui_WoodHarvesterControls_lengthPreset3Title" text="Длина 3 (см)" />
+                <text name="ui_WoodHarvesterControls_lengthPreset3TT"
+                        text="Определяет длину протяжки при нажатии кнопки 'Протяжка на длину 3 / 4'." />
+
+                <text name="ui_WoodHarvesterControls_lengthPreset4Title" text="Длина 4 (см)" />
+                <text name="ui_WoodHarvesterControls_lengthPreset4TT"
+                        text="Определяет длину протяжки при двойном нажатии кнопки 'Протяжка на длину 3 / 4'." />
+
+                <text name="ui_WoodHarvesterControls_repeatLengthPresetTitle"
+                        text="Повторить длину протяжки" />
+                <text name="ui_WoodHarvesterControls_repeatLengthPresetTT"
+                        text="Эта опция определяет длину протяжки, когда активна опция 'Автоматическая протяжка после резки':
+Вкл: Повторяется последняя заданная длина (если использовалась).
+Выкл: Начинает протяжку в соответствии с длиной заданной в автопрограмме." />
+
+                <!-- Saw -->
+                <text name="ui_WoodHarvesterControls_sectionSaw" text="Пила" />
+
+                <text name="ui_WoodHarvesterControls_sawModeTitle" text="Режим пилы" />
+                <text name="ui_WoodHarvesterControls_sawModeTT"
+                        text="Автоматический: если нажать кнопку реза, пила полностью распилит ствол. Полуавтоматический: для валки стоящих деревьев необходимо удерживать кнопку обрезки. Вручную: Кнопку отрезания нужно удерживать до отсечения ствола." />
+
+
+                <!-- Feeding -->
+                <text name="ui_WoodHarvesterControls_sectionFeeding" text="Протяжка" />
+
+                <text name="ui_WoodHarvesterControls_breakingDistanceTitle"
+                        text="Тормозной зазор (см)" />
+                <text name="ui_WoodHarvesterControls_breakingDistanceTT"
+                        text="Определяет расстояние до заданной длины, начиная с которого подача тормозится для обеспечения плавной остановки." />
+
+                <text name="ui_WoodHarvesterControls_slowFeedingTiltedUpTitle"
+                        text="Медленная протяжка с поднятой харвестерной головкой" />
+                <text name="ui_WoodHarvesterControls_slowFeedingTiltedUpTT"
+                        text="Если харвестерная головка поднята, подача происходит медленно, чтобы обеспечить более точное положение для пропила." />
+
+                <text name="ui_WoodHarvesterControls_feedingSpeedTitle"
+                        text="Скорость протяжки (м/с)" />
+                <text name="ui_WoodHarvesterControls_feedingSpeedTT"
+                        text="Определяет общую скорость подачи харвестерной головки. Также относится к ручной протяжке." />
+
+                <text name="ui_WoodHarvesterControls_slowFeedingSpeedTitle"
+                        text="Скорость медленной протяжки (м/с)" />
+                <text name="ui_WoodHarvesterControls_slowFeedingSpeedTT"
+                        text="Определяет скорость подачи для ручной медленной протяжки." />
+
+                <!-- Tilt -->
+                <text name="ui_WoodHarvesterControls_sectionTilt"
+                        text="Поворот харвестерной головки" />
+
+                <text name="ui_WoodHarvesterControls_tiltDownOnFellingCutTitle"
+                        text="Поворот после валочного пропила" />
+                <text name="ui_WoodHarvesterControls_tiltDownOnFellingCutTT"
+                        text="Если опция активна, харвестерная головка автоматически поворачивается после валочного пропила." />
+
+                <text name="ui_WoodHarvesterControls_tiltUpWithOpenButtonTitle"
+                        text="Поворот с помощью кнопки" />
+                <text name="ui_WoodHarvesterControls_tiltUpWithOpenButtonTT"
+                        text="Если опция активна, харвестерная головка поворачивается при удерживании кнопки." />
+
+                <text name="ui_WoodHarvesterControls_tiltUpDelayTitle" text="Задержка поворота (мс)" />
+                <text name="ui_WoodHarvesterControls_tiltUpDelayTT"
+                        text="Определяет время, в течение которого необходимо удерживать кнопку, чтобы повернуть харвестерную головку." />
+
+                <text name="ui_WoodHarvesterControls_tiltMaxAngleTitle"
+                        text="Максимальный угол поворота" />
+                <text name="ui_WoodHarvesterControls_tiltMaxAngleTT"
+                        text="Максимальный угол поворота в градусах. 95º работает в большинстве случаев. 135º - это реалистичный угол поворота, но для этого требуется харвестерная головка с хорошим центром масс, чтобы оставаться параллельной земле." />
+
+                <!-- User Preferences -->
+                <text name="ui_WoodHarvesterControls_sectionUserPreferences"
+                        text="Пользовательские настройки" />
+
+                <text name="ui_WoodHarvesterControls_registerSoundTitle" text="Ассортимент звуков" />
+                <text name="ui_WoodHarvesterControls_registerSoundTT"
+                        text="Если опция активна, по достижении желаемой длины раздаётся звуковой сигнал. Другой сигнал также звучит при смене длины протяжки." />
+
+                <text name="ui_WoodHarvesterControls_maxRemovingLengthTitle"
+                        text="Измельчить брёвна диаметром меньше (см)" />
+                <text name="ui_WoodHarvesterControls_maxRemovingLengthTT"
+                        text="Отрезанные стволы ниже определённой длины измельчаются. Это повышает производительность за счёт исключения мелких деталей, например, образующихся при обрезке концов бревна." />
+
+                <text name="ui_WoodHarvesterControls_allSplitTypeTitle"
+                        text="Поддержка всех деревьев" />
+                <text name="ui_WoodHarvesterControls_allSplitTypeTT"
+                        text="Если опция активна, все типы деревьев можно обрабатывать ЛЗ комбайнами. Это полезно для обработки деревьев, спиленных бензопилой.
+Обратите внимание, что коллизии деревьев, которые не поддерживаются, могут привести к проблемам с ЛЗ комбайнами. Используйте с осторожностью!" />
+
+                <!-- Help - Input bindings -->
+
+                <text name="help_WoodHarvesterControls_inputBindingsTitle" text="Сочетания клавиш" />
+                <text name="help_WoodHarvesterControls_inputBindings"
+                        text="Есть стандартные сочетания клавиатуры/мыши и геймпада, но их можно изменить по своему усмотрению.
+
+Если используется джойстик, его необходимо настроить самостоятельно.
+
+Ниже приведены краткие пояснения по управлению и назначению:" />
+
+                <text name="help_WoodHarvesterControls_onOffBindingTitle"
+                        text="Вкл/Выкл харвестерную головку" />
+                <text name="help_WoodHarvesterControls_onOffBinding"
+                        text="Чтобы активировать харвестерную головку, можно использовать внутриигровое сочетание клавиш 'Включить/выключить навесное оборудование' или это, если вы хотите использовать другие кнопки. 
+
+(Установка этого сочетания клавиш не отключает 'Включить/выключить навесное оборудование'. Оба будут выполнять одну и ту же функцию.)." />
+
+                <text name="help_WoodHarvesterControls_cutBindingTitle"
+                        text="Запустить пилу (Отпилить)" />
+                <text name="help_WoodHarvesterControls_cutBinding"
+                        text="Чтобы активировать пилу, при желании можно использовать обычное назначение '2-я функция приспособления' или эту функцию. 
+
+(Привязка этой функции не деактивирует назначение '2-я функция приспособления'. (Обе выполняют одну и ту же функцию.)" />
+
+                <text name="help_WoodHarvesterControls_closeBindingTitle"
+                        text="Закрыть харвестерную головку (Захватить дерево)" />
+                <text name="help_WoodHarvesterControls_closeBinding"
+                        text="При кратковременном нажатии на эту кнопку харвестерная головка немного закроется (закрываются только ножи, как в реальной модели, если лесозаготовительный комбайн это поддерживает).
+
+Если кнопка удерживается, харвестерная головка полностью закрывается и захватывает ствол, если он находится в пределах досягаемости.
+
+Если харвестерная головка закрыта, автоматическая программа может быть запущена в соответствии с выбранными параметрами." />
+
+                <text name="help_WoodHarvesterControls_openBindingTitle"
+                        text="Открыть харвестерную головку (Отпустить дерево)" />
+                <text name="help_WoodHarvesterControls_openBinding"
+                        text="При кратковременном нажатии на эту кнопку харвестерная головка полностью открывается и отпускает захваченный ствол.
+
+Если кнопка удерживается, харвестерная головка открывается и поворачивается (эту опцию можно включить или выключить)." />
+
+                <text name="help_WoodHarvesterControls_openCloseBindingTitle"
+                        text="Открыть/Закрыть харвестерную головку (Отпустить/Захватить дерево)" />
+                <text name="help_WoodHarvesterControls_openCloseBinding"
+                        text="При кратковременном нажатии на эту кнопку, при закрытой харвестерной головке, она полностью открывается и отпускает захваченный ствол.
+
+Если кнопка кратковременно нажимается, при открытой харвестерной головке, она полностью закрывается и захватывает ствол, если он находится в пределах досягаемости.
+
+Если харвестерная головка открыта и кнопка удерживается, харвестерная головка откроется и повернётся (эту опцию можно включить или выключить)." />
+
+                <text name="help_WoodHarvesterControls_feedForwardBindingTitle"
+                        text="Ручная протяжка дерева вперёд" />
+                <text name="help_WoodHarvesterControls_feedForwardBinding"
+                        text="Харвестерная головка подаёт ствол вперёд (по направлению к пиле), пока кнопка нажата.
+
+Также можно использовать для остановки функции 'Автоматическая протяжка после резки', если нажать эту кнопку во время распиловки." />
+
+                <text name="help_WoodHarvesterControls_feedBackwardBindingTitle"
+                        text="Ручная протяжка дерева назад" />
+                <text name="help_WoodHarvesterControls_feedBackwardBinding"
+                        text="Харвестерная головка подаёт ствол назад (от пилы), пока кнопка нажата.
+
+Также можно использовать для остановки функции 'Автоматическая протяжка после резки', если нажать эту кнопку во время распиловки." />
+
+                <text name="help_WoodHarvesterControls_slowFeedForwardBindingTitle"
+                        text="Медленная ручная протяжка дерева вперёд" />
+                <text name="help_WoodHarvesterControls_slowFeedForwardBinding"
+                        text="Харвестерная головка медленно подаёт дерево вперёд (по направлению к пиле), пока кнопка удерживается." />
+
+                <text name="help_WoodHarvesterControls_slowFeedBackwardBindingTitle"
+                        text="Медленная ручная протяжка дерева назад" />
+                <text name="help_WoodHarvesterControls_slowFeedBackwardBinding"
+                        text="Харвестерная головка медленно подаёт дерево назад (от пилы), пока кнопка удерживается." />
+
+                <text name="help_WoodHarvesterControls_automaticProgramBindingTitle"
+                        text="Протяжка/отрезание (автопрограмма)" />
+                <text name="help_WoodHarvesterControls_automaticProgramBinding"
+                        text="Эта кнопка запускает автоматическую программу, в зависимости от выбранных опций может влиять на подачу, валочный и сортировочный пропилы." />
+
+                <text name="help_WoodHarvesterControls_stopBindingTitle" text="Остановить протяжку" />
+                <text name="help_WoodHarvesterControls_stopBinding"
+                        text="Эта кнопка останавливает протяжку. Также останавливает функцию 'Автоматическая протяжка после резки'." />
+
+                <text name="help_WoodHarvesterControls_tiltUpBindingTitle"
+                        text="Повернуть харвестерную головку вверх" />
+                <text name="help_WoodHarvesterControls_tiltUpBinding"
+                        text="Эта кнопка поворачивает харвестерную головку вверх.
+
+Если кнопку удерживать нажатой во время валочного пропила, головка не будет наклоняться вниз до тех пор, пока кнопка не будет отпущена (см. раздел 'Расширенное управление поворотом')." />
+
+                <text name="help_WoodHarvesterControls_tiltDownBindingTitle"
+                        text="Повернуть харвестерную головку вниз" />
+                <text name="help_WoodHarvesterControls_tiltDownBinding"
+                        text="Эта кнопка поворачивает харвестерную головку вниз.
+
+Кнопку также можно использовать для принудительного опускания харвестерной головки (см. раздел 'Расширенное управление поворотом')." />
+
+                <text name="help_WoodHarvesterControls_tiltUpDownBindingTitle"
+                        text="Повернуть харвестерную головку Вверх/Вниз" />
+                <text name="help_WoodHarvesterControls_tiltUpDownBinding"
+                        text="Эта кнопка наклоняет харвестерную головку вверх или вниз." />
+
+                <text name="help_WoodHarvesterControls_presetBindingTitle" text="Протяжка на длину" />
+                <text name="help_WoodHarvesterControls_presetBinding"
+                        text="Нажатие этой кнопки подаст дерево на длину, установленную в меню. Каждая привязка имеет две предустановки длины. 
+
+Нажмите эту кнопку один раз для подачи на первую предустановку длины и дважды для подачи на вторую." />
+
+                <text name="help_WoodHarvesterControls_menuBindingTitle"
+                        text="Открыть настройки Wood Harvester Controls" />
+                <text name="help_WoodHarvesterControls_menuBinding"
+                        text="Чтобы открыть меню, при желании, можно использовать обычное назначение '3-я функция приспособления' или эту кнопку.
+
+(Привязка этой функции не деактивирует назначение '3-я функция приспособления'. Обе выполняют одну и ту же функцию.)" />
+
+                <!-- Advanced tilt controls -->
+
+                <text name="help_WoodHarvesterControls_advancedTiltControls"
+                        text="Расширенное управление поворотом" />
+
+                <text name="help_WoodHarvesterControls_forcedTiltDownTitle"
+                        text="Принудительное опрокидывание" />
+                <text name="help_WoodHarvesterControls_forcedTiltDown"
+                        text="Если харвестерная головка находится в свободном состоянии, можно приложить дополнительное усилие вниз, удерживая кнопку 'Принудительное опрокидывание'. Это полезно в следующих примерных ситуациях:
+
+- Когда вы валите дерево, вы можете дважды нажать и удерживать кнопку наклона вниз, чтобы применить некоторое давление с помощью цилиндра наклона и помочь дереву упасть в нужном вам направлении. Первое нажатие переводит головку в плавающий режим (наклон вниз), а затем вы нажимаете и удерживаете, чтобы принудительно наклонить её вниз.
+
+- При захвате бревна с земли и удерживании 'Повернуть харвестерную головку вниз' харвестерная головка имеет некоторое сопротивление с люфтом, чтобы захватить бревно верхними ножами, чтобы избежать столкновения роликов с другими брёвнами или деревьями. Для этого необходимы функционирующие столкновения ножей харвестерной головки." />
+
+                <text name="help_WoodHarvesterControls_forcedTiltUpTitle"
+                        text="Не поворачивать харвестерную головку после основного пропила" />
+                <text name="help_WoodHarvesterControls_forcedTiltUp"
+                        text="При работе с небольшими или лёгкими деревьями (например, при расчистке леса) дерево можно перемещать вертикально, удерживая кнопку 'Повернуть харвестерную головку вверх' во время валочного пропила до тех пор, пока вы не отпустите кнопку. 
+
+- Полезно для того, чтобы вытаскивать стоящие деревья из узких мест и позволять им целенаправленно падать там, где вы хотите." />
+
+
+                <!-- Processing standing trees -->
+                <text name="help_WoodHarvesterControls_processingStandingTreesTitle"
+                        text="Обработка стоящих деревьев" />
+                <text name="help_WoodHarvesterControls_processingStandingTrees"
+                        text="Одним из способов работы является рубка и обработка деревьев прямо в лесу, а затем сбор брёвен с помощью трактора или форвардера, чтобы доставить их в зону, доступную для грузовиков. Этот метод называется обрезкой по длине." />
+
+
+                <text name="help_WoodHarvesterControls_alignTheHeadTitle"
+                        text="Выровняйте харвестерную головку" />
+                <text name="help_WoodHarvesterControls_alignTheHead"
+                        text="Выберите направление валки и соответствующим образом выровняйте харвестерную головку." />
+
+                <text name="help_WoodHarvesterControls_grabTheTreeTitle" text="Захватите дерево" />
+                <text name="help_WoodHarvesterControls_grabTheTree"
+                        text="Немного закройте валочную головку кнопкой 'Закрыть харвестерную головку (Захватить дерево)' и завершите позиционирование. Затем используйте кнопку 'Закрыть харвестерную головку (Захватить дерево)', чтобы полностью закрыть харвестерную головку и захватить ствол.
+
+Если используется кнопка 'Открыть/Закрыть харвестерную головку (Отпустить/Захватить дерево)', её нужно нажать только один раз.
+
+(Этот шаг можно пропустить, если активна опция 'Захватить дерево после спила')" />
+
+                <text name="help_WoodHarvesterControls_manuallyFeedBackTitle"
+                        text="Ручная протяжка дерева вперёд" />
+                <text name="help_WoodHarvesterControls_manuallyFeedBack"
+                        text="Основной пропил можно сделать ниже, подав вручную назад (кран также должен быть опущен).
+
+(Этот шаг требует выполнения предыдущих шагов, так как харвестерная головка должна удерживать дерево)" />
+
+                <text name="help_WoodHarvesterControls_applySomePreasureTitle"
+                        text="Приложите некоторое давление" />
+                <text name="help_WoodHarvesterControls_applySomePreasure"
+                        text="Кран можно немного переместить в желаемом направлении падения, чтобы применить давление в этом направлении.
+
+Кроме того, можно применить 'Принудительное опрокидывание' (см. раздел 'Расширенное управление поворотом')." />
+
+                <text name="help_WoodHarvesterControls_fellingCutTitle" text="Валочный пропил" />
+                <text name="help_WoodHarvesterControls_fellingCut"
+                        text="Пила активируется кнопками 'Запустить пилу (Отпилить)' или 'Протяжка/отрезание (автопрограмма)' (если активен основной пропил в опциях автоматической программы). 
+
+В зависимости от режима пилы и опций автоматической программы валки эту кнопку необходимо удерживать до тех пор, пока ствол не будет полностью распилен." />
+
+                <text name="help_WoodHarvesterControls_fellingMovementTitle"
+                        text="Валочное движение" />
+                <text name="help_WoodHarvesterControls_fellingMovement"
+                        text="Если перед спиливанием применялось давление, дерево должно упасть в этом направлении.
+
+Чтобы направить дерево в нужном направлении, харвестерную головку можно слегка приподнять (чтобы освободить место для наклона между пнём и стволом), а кран переместить в противоположном направлении.
+
+При необходимости ствол также можно подавать вручную или с помощью автоматической программы (в зависимости от варианта протяжки)" />
+
+                <text name="help_WoodHarvesterControls_treeProcessingTitle" text="Обработка" />
+                <text name="help_WoodHarvesterControls_treeProcessing"
+                        text="Дерево можно обрабатывать тремя способами:
+
+- Автоматическая программа: компьютер определяет длину по диаметру ствола. При изменении длины будет подан сигнал, позволяющий пользователю выполнять сортировку по разным пакетам (см. раздел 'Автоматическая программа').
+
+- Предустановки длин: эти функции можно использовать отдельно или для отмены автоматической программы, например, для повреждённой или мёртвой древесины (см. раздел 'Предустановки длин').
+
+- Вручную: с помощью ручной протяжки дерево можно срезать и распиливать по желанию.
+
+(См. раздел меню 'Вращение' и настройте по своему вкусу. Может быть полезно для сортировки в красивые стопки.)" />
+
+                <text name="help_WoodHarvesterControls_treeTopTitle"
+                        text="Обработка верхушек деревьев" />
+                <text name="help_WoodHarvesterControls_treeTop"
+                        text="Достигнув вершины дерева, вы можете отложить её в сторону (открыв харвестерную головку или подав её назад). 
+
+Верхушку можно вручную обрезать до нужной длины, чтобы отправить на бумажную фабрику или измельчить. 
+
+Другой вариант — распилить верхушку на множество мелких кусочков, чтобы позже замульчировать (или использовать опцию 'Измельчить брёвна диаметром меньше')." />
+
+                <text name="help_WoodHarvesterControls_preparingForNextTreeTitle"
+                        text="Подготовка к следующему дереву" />
+                <text name="help_WoodHarvesterControls_preparingForNextTree"
+                        text="Если 'Простое управление' не используется, харвестерную головку необходимо открывать и поднимать вручную.
+
+Харвестерную головку можно открыть с помощью кнопок 'Открыть харвестерную головку (Отпустить дерево)' или 'Открыть/Закрыть харвестерную головку (Отпустить/Захватить дерево)'.
+
+При удерживании кнопок 'Открыть харвестерную головку (Отпустить дерево)' или 'Открыть/Закрыть харвестерную головку (Отпустить/Захватить дерево)' харвестерная головка открывается и поворачивается, если активна опция 'Поворот с помощью кнопки'. В противном случае её необходимо повернуть с помощью кнопок 'Повернуть харвестерную головку вверх' или 'Повернуть харвестерную головку Вверх/Вниз'." />
+
+
+                <!-- Processing felled trees -->
+                <text name="help_WoodHarvesterControls_processingFelledTreesTitle"
+                        text="Обработка спиленных деревьев" />
+                <text name="help_WoodHarvesterControls_processingFelledTrees"
+                        text="Другой способ – обработка уже срубленных деревьев.
+        
+При этом методе срубленные деревья перетаскиваются на ровную площадку с хорошим доступом и складываются там для облегчения обработки и погрузки на грузовики.
+
+Харвестерную головку можно использовать для штабелирования целых деревьев и подготовки их к дальнейшей обработке или транспортировке." />
+
+                <text name="help_WoodHarvesterControls_positionTheMachineTitle"
+                        text="Расположите комбайн" />
+                <text name="help_WoodHarvesterControls_positionTheMachine"
+                        text="Расположите комбайн под прямым углом перед штабелем. Таким образом, вы можете работать задним ходом и ставить стопки обработанной древесины перед транспортным средством.
+                
+Обычно работать удобнее слева, так как стрела комбайна обычно находится справа и уменьшает видимость. Кроме того, при этом видна пила, что облегчает установку торца бревна, как описано в следующем шаге." />
+
+                <text name="help_WoodHarvesterControls_grabFelledTreeTitle" text="Захватите дерево" />
+                <text name="help_WoodHarvesterControls_grabFelledTree"
+                        text="Совместите харвестерную головку с верхним бревном штабеля. Убедитесь, что никакие брёвна не перекрываются, в противном случае они должны быть обработаны в первую очередь.
+                
+Коротко нажмите кнопку 'Закрыть харвестерную головку (Захватить дерево)', чтобы немного сомкнуть ножи и захватить ствол. Затем удерживайте эту кнопку, чтобы полностью закрыть харвестерную головку.
+
+Кроме того, для облегчения процесса, можно использовать 'Принудительное опрокидывание'. (см. раздел 'Расширенное управление поворотом')" />
+
+                <text name="help_WoodHarvesterControls_findBottomTitle" text="Найдите торец бревна" />
+                <text name="help_WoodHarvesterControls_findBottom"
+                        text="Подавайте бревно назад, пока его торец не окажется на одном уровне с пилой. В этом могут помочь кнопки медленной подачи.
+                
+В качестве альтернативы торец можно отрегулировать с помощью пропила, например, для исправления диагонального основного пропила." />
+
+                <text name="help_WoodHarvesterControls_resetMeasurementTitle"
+                        text="Сброс измерения длины" />
+                <text name="help_WoodHarvesterControls_resetMeasurement"
+                        text="В этот момент компьютер лесозаготовителя, скорее всего, покажет что-то отличное от нуля, поэтому его следует сбросить одним из двух способов:
+
+- Если вы хотите очистить кусок дерева или чтобы первое бревно имело точные размеры, вам придётся сделать надрез. (В опциях есть возможность удалять небольшие обрезанные брёвна. Это должно улучшить производительность, так как мелкие куски дерева не будут появляться на земле.)
+ 
+- Если конец бревна подходит и точное измерение не требуется, пилу можно ненадолго активировать в ручном режиме. Это сбрасывает измерение без выполнения полного разреза." />
+
+        </texts>
+</l10n>
