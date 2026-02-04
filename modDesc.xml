@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="92">
     <author>Bargon Mods, DiscoFlower8890</author>
-    <version>0.2.0.0</version>
+    <version>0.2.1.0</version>
     <title>
         <en>Wood Harvester Controls</en>
         <de>Holzvollernter-Steuerungen</de>
@@ -203,6 +203,8 @@ Menü - Benutzer Einstellungen:
         <action name="WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_1" category="VEHICLE" axisType="HALF"
             ignoreComboMask="false" />
         <action name="WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_2" category="VEHICLE" axisType="HALF"
+            ignoreComboMask="false" />
+        <action name="WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_3" category="VEHICLE" axisType="HALF"
             ignoreComboMask="false" />
 
         <action name="WOOD_HARVESTER_CONTROLS_MENU" category="VEHICLE" axisType="HALF"

@@ -39,6 +39,8 @@
             text="Протяжка на длину 1 / 2" />
         <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_2"
             text="Протяжка на длину 3 / 4" />
+        <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_3"
+            text="Протяжка на длину 5 / 6" />
 
         <text name="input_WOOD_HARVESTER_CONTROLS_MENU"
             text="Открыть настройки Wood Harvester Controls" />
@@ -213,6 +215,14 @@
         <text name="ui_WoodHarvesterControls_lengthPreset4Title" text="Длина 4 (см)" />
         <text name="ui_WoodHarvesterControls_lengthPreset4TT"
             text="Определяет длину протяжки при двойном нажатии кнопки 'Протяжка на длину 3 / 4'." />
+
+        <text name="ui_WoodHarvesterControls_lengthPreset5Title" text="Длина 5 (см)" />
+        <text name="ui_WoodHarvesterControls_lengthPreset5TT"
+            text="Определяет длину протяжки при нажатии кнопки 'Протяжка на длину 5 / 6'." />
+
+        <text name="ui_WoodHarvesterControls_lengthPreset6Title" text="Длина 6 (см)" />
+        <text name="ui_WoodHarvesterControls_lengthPreset6TT"
+            text="Определяет длину протяжки при двойном нажатии кнопки 'Протяжка на длину 5 / 6'." />
 
         <text name="ui_WoodHarvesterControls_repeatLengthPresetTitle"
             text="Повторить длину протяжки" />

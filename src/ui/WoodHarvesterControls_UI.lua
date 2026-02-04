@@ -132,7 +132,7 @@ function WoodHarvesterControls_UI:updateValues()
 
     self.sawModeSetting:setState(whSpec.sawMode)
 
-    for i = 1, 4 do
+    for i = 1, 6 do
         self["lengthPreset" .. i]:setText(tostring(MathUtil.round(whSpec["lengthPreset" .. i] /
             WoodHarvesterControls_UI.LENGTH_FACTOR)))
     end
@@ -290,7 +290,7 @@ function WoodHarvesterControls_UI:updateSettingsToSave()
 
     settings.sawMode = self.sawModeSetting:getState()
 
-    for i = 1, 4 do
+    for i = 1, 6 do
         local n = Utils.getNoNil(tonumber(self["lengthPreset" .. i]:getText()), 0)
         settings["lengthPreset" .. i] = MathUtil.round(n) * WoodHarvesterControls_UI.LENGTH_FACTOR
     end

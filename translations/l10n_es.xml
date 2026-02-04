@@ -25,6 +25,7 @@
 
         <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_1" text="Alimentación a la longitud preestablecida 1 / 2" />
         <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_2" text="Alimentación a la longitud preestablecida 3 / 4" />
+        <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_3" text="Alimentación a la longitud preestablecida 5 / 6" />
 
         <text name="input_WOOD_HARVESTER_CONTROLS_MENU" text="Abrir el menú WoodHarvesterControls" />
 
@@ -155,6 +156,12 @@ Pruébelo y si se comporta de forma extraña, desactívelo y, si es necesario, r
 
         <text name="ui_WoodHarvesterControls_lengthPreset4Title" text="Longitud preestablecida 4 (cm)" />
         <text name="ui_WoodHarvesterControls_lengthPreset4TT" text="Define la longitud a la que se alimenta el árbol cuando se pulsa dos veces el botón 'Longitud preestablecida 3 / 4'" />
+
+        <text name="ui_WoodHarvesterControls_lengthPreset5Title" text="Longitud preestablecida 5 (cm)" />
+        <text name="ui_WoodHarvesterControls_lengthPreset5TT" text="Define la longitud a la que se alimenta el árbol cuando se pulsa una vez el botón 'Longitud preestablecida 5 / 6'" />
+
+        <text name="ui_WoodHarvesterControls_lengthPreset6Title" text="Longitud preestablecida 6 (cm)" />
+        <text name="ui_WoodHarvesterControls_lengthPreset6TT" text="Define la longitud a la que se alimenta el árbol cuando se pulsa dos veces el botón 'Longitud preestablecida 5 / 6'" />
 
         <text name="ui_WoodHarvesterControls_repeatLengthPresetTitle" text="Repetir longitud preestablecida" />
         <text name="ui_WoodHarvesterControls_repeatLengthPresetTT" text="Esta opción define qué longitud se utiliza cuando la opción 'Alimentación automática después del corte' está activada:

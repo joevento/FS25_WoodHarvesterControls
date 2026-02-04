@@ -25,6 +25,7 @@
 
         <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_1" text="Mata till förvald längd 1 / 2" />
         <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_2" text="Mata till förvald längd 3 / 4" />
+        <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_3" text="Mata till förvald längd 5 / 6" />
 
         <text name="input_WOOD_HARVESTER_CONTROLS_MENU" text="Öppna Wood Harvester Controls meny" />
 
@@ -155,6 +156,12 @@ Testa det och om fordonet beter sig konstigt avakrivera fysisk rotator, och om n
 
         <text name="ui_WoodHarvesterControls_lengthPreset4Title" text="Förinställd längd  4 (cm)" />
         <text name="ui_WoodHarvesterControls_lengthPreset4TT" text="Definierar längden som stammen matas till när 'Förinställd längd 3 / 4' knappen dubbeltrycks" />
+
+        <text name="ui_WoodHarvesterControls_lengthPreset5Title" text="Förinställd längd  5 (cm)" />
+        <text name="ui_WoodHarvesterControls_lengthPreset5TT" text="Definierar längden som stammen matas till när 'Förinställd längd 5 / 6' knappen trycks" />
+
+        <text name="ui_WoodHarvesterControls_lengthPreset6Title" text="Förinställd längd  6 (cm)" />
+        <text name="ui_WoodHarvesterControls_lengthPreset6TT" text="Definierar längden som stammen matas till när 'Förinställd längd 5 / 6' knappen dubbeltrycks" />
 
         <text name="ui_WoodHarvesterControls_repeatLengthPresetTitle" text="Upprepa förinställd längd " />
         <text name="ui_WoodHarvesterControls_repeatLengthPresetTT" text="Det här alternativet definierar vilkenlängd som används när 'Automatisk matning efter apteringskap' alternativet är på:

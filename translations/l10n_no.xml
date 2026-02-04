@@ -25,6 +25,7 @@
 
         <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_1" text="Mat til forhåndsinnstilt lengde 1/2" />
         <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_2" text="Mat til forhåndsinnstilt lengde 3 / 4" />
+        <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_3" text="Mat til forhåndsinnstilt lengde 5 / 6" />
 
         <text name="input_WOOD_HARVESTER_CONTROLS_MENU" text="Åpne Wood Harvester Controls Menyen" />
 
@@ -155,6 +156,12 @@ Test det og hvis kjøretøyet oppfører seg merkelig, deaktiver det og om nødve
 
         <text name="ui_WoodHarvesterControls_lengthPreset4Title" text="Forhåndsinnstilling Av Lengde 4 (cm)" />
         <text name="ui_WoodHarvesterControls_lengthPreset4TT" text="Definerer lengden som treet mates til når 'Forhåndsinnstilt Lengde 3 / 4' knappen trykkes dobbelt" />
+
+        <text name="ui_WoodHarvesterControls_lengthPreset5Title" text="Forhåndsinnstilling Av Lengde 5 (cm)" />
+        <text name="ui_WoodHarvesterControls_lengthPreset5TT" text="Definerer lengden som treet mates til når 'Forhåndsinnstilt Lengde 5 / 6' knappen trykkes" />
+
+        <text name="ui_WoodHarvesterControls_lengthPreset6Title" text="Forhåndsinnstilling Av Lengde 6 (cm)" />
+        <text name="ui_WoodHarvesterControls_lengthPreset6TT" text="Definerer lengden som treet mates til når 'Forhåndsinnstilt Lengde 5 / 6' knappen trykkes dobbelt" />
 
         <text name="ui_WoodHarvesterControls_repeatLengthPresetTitle" text="Gjenta forhåndsinnstilt lengde" />
         <text name="ui_WoodHarvesterControls_repeatLengthPresetTT" text="Dette alternativet definerer hvilken lengde som brukes når alternativet 'Automatisk mating etter kutt' er aktivert:

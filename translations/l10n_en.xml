@@ -25,6 +25,7 @@
 
         <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_1" text="Feed to length preset 1 / 2" />
         <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_2" text="Feed to length preset 3 / 4" />
+        <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_3" text="Feed to length preset 4 / 6" />
 
         <text name="input_WOOD_HARVESTER_CONTROLS_MENU" text="Open Wood Harvester Controls menu" />
 
@@ -155,6 +156,12 @@ Test it and if the vehicle behaves strange, deactivate it and if necessary, rese
 
         <text name="ui_WoodHarvesterControls_lengthPreset4Title" text="Length Preset 4 (cm)" />
         <text name="ui_WoodHarvesterControls_lengthPreset4TT" text="Defines the length to which the tree is fed when 'Length Preset 3 / 4' button is double pressed" />
+
+        <text name="ui_WoodHarvesterControls_lengthPreset5Title" text="Length Preset 5 (cm)" />
+        <text name="ui_WoodHarvesterControls_lengthPreset5TT" text="Defines the length to which the tree is fed when 'Length Preset 5 / 6' button is pressed" />
+
+        <text name="ui_WoodHarvesterControls_lengthPreset6Title" text="Length Preset 6 (cm)" />
+        <text name="ui_WoodHarvesterControls_lengthPreset6TT" text="Defines the length to which the tree is fed when 'Length Preset 5 / 6' button is double pressed" />
 
         <text name="ui_WoodHarvesterControls_repeatLengthPresetTitle" text="Repeat length preset" />
         <text name="ui_WoodHarvesterControls_repeatLengthPresetTT" text="This option defines what length is used when 'Automatic feed after cut' option is enabled:

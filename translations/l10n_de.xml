@@ -23,6 +23,7 @@
 
         <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_1" text="Zufuhr auf Längen-Sortiment 1 / 2" />
         <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_2" text="Zufuhr auf Längen-Sortiment 3 / 4" />
+        <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_3" text="Zufuhr auf Längen-Sortiment 5 / 6" />
 
         <text name="input_WOOD_HARVESTER_CONTROLS_MENU" text="Wood Harvester Controls Menü öffnen" />
 
@@ -153,6 +154,12 @@ Verhält sich das Fahrzeug seltsam sollte die Option deaktiviert und bei Bedarf 
 
         <text name="ui_WoodHarvesterControls_lengthPreset4Title" text="Längen-Sortimnet 4 (cm)" />
         <text name="ui_WoodHarvesterControls_lengthPreset4TT" text="Definiert die Länge der Zufuhr wenn die Taste 'Zufuhr auf Längen-Sortiment 3 / 4' zweimal gedrückt wird" />
+
+        <text name="ui_WoodHarvesterControls_lengthPreset5Title" text="Längen-Sortimnet 5 (cm)" />
+        <text name="ui_WoodHarvesterControls_lengthPreset5TT" text="Definiert die Länge der Zufuhr wenn die Taste 'Zufuhr auf Längen-Sortiment 5 / 6' zweimal gedrückt wird" />
+
+        <text name="ui_WoodHarvesterControls_lengthPreset6Title" text="Längen-Sortimnet 6 (cm)" />
+        <text name="ui_WoodHarvesterControls_lengthPreset6TT" text="Definiert die Länge der Zufuhr wenn die Taste 'Zufuhr auf Längen-Sortiment 6 / 6' zweimal gedrückt wird" />
 
         <text name="ui_WoodHarvesterControls_repeatLengthPresetTitle" text="Längen-Sortimnet wiederholen" />
         <text name="ui_WoodHarvesterControls_repeatLengthPresetTT" text="Diese Option legt fest auf welche Länge zugeführt wird, wenn die Option 'Automatische Zufuhr nach dem Schnitt' aktiv ist:

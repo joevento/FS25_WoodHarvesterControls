@@ -37,7 +37,8 @@ local Button = {
     STOP = 13,
     LENGTH_PRESET_1 = 14,
     LENGTH_PRESET_2 = 15,
-    MENU = 16
+    MENU = 16,
+    LENGTH_PRESET_3 = 17
 }
 
 local ActionName = {
@@ -59,6 +60,7 @@ local ActionName = {
     STOP = 'WOOD_HARVESTER_CONTROLS_STOP',
     LENGTH_PRESET_1 = 'WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_1',
     LENGTH_PRESET_2 = 'WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_2',
+    LENGTH_PRESET_3 = 'WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_3',
     MENU = 'WOOD_HARVESTER_CONTROLS_MENU'
 }
 
@@ -81,7 +83,8 @@ local ActionButtonMapping = {
     [ActionName.STOP] = Button.STOP,
     [ActionName.LENGTH_PRESET_1] = Button.LENGTH_PRESET_1,
     [ActionName.LENGTH_PRESET_2] = Button.LENGTH_PRESET_2,
-    [ActionName.MENU] = Button.MENU
+    [ActionName.MENU] = Button.MENU,
+    [ActionName.LENGTH_PRESET_3] = Button.LENGTH_PRESET_3
 }
 
 local ButtonHandlerMapping = {
@@ -99,7 +102,8 @@ local ButtonHandlerMapping = {
     [Button.AUTOMATIC_PROGRAM] = "onAutomaticProgramButton",
     [Button.STOP] = "onStopButton",
     [Button.LENGTH_PRESET_1] = "onPreset1Button",
-    [Button.LENGTH_PRESET_2] = "onPreset2Button"
+    [Button.LENGTH_PRESET_2] = "onPreset2Button",
+    [Button.LENGTH_PRESET_3] = "onPreset3Button"
 }
 
 local AnimationKey = {
@@ -188,6 +192,9 @@ local Actions = { {
     priority = GS_PRIO_NORMAL
 }, {
     name = ActionName.LENGTH_PRESET_2,
+    priority = GS_PRIO_NORMAL
+}, {
+    name = ActionName.LENGTH_PRESET_3,
     priority = GS_PRIO_NORMAL
 }, {
     name = ActionName.MENU,
@@ -420,6 +427,8 @@ function WoodHarvesterControls:onLoad(superFunc, savegame)
     spec.lengthPreset2 = 4
     spec.lengthPreset3 = 5
     spec.lengthPreset4 = 6
+    spec.lengthPreset5 = 7
+    spec.lengthPreset6 = 8
     spec.repeatLengthPreset = false
 
     spec.breakingDistance = 1
@@ -476,6 +485,7 @@ function WoodHarvesterControls:onLoad(superFunc, savegame)
 
     spec.lastPreset1Time = -1
     spec.lastPreset2Time = -1
+    spec.lastPreset3Time = -1
     spec.doublePressPresetTime = 500
 
     if self.isServer then
@@ -600,7 +610,7 @@ function WoodHarvesterControls:onPostLoad(superFunc, savegame)
 
     spec.sawMode = savegame.xmlFile:getValue(key .. "#sawMode", spec.sawMode)
 
-    for i = 1, 4 do
+    for i = 1, 6 do
         local toolKey = string.format("%s.lengthPreset(%d)", key, i - 1)
         spec["lengthPreset" .. i] = savegame.xmlFile:getValue(toolKey .. "#length", spec["lengthPreset" .. i])
     end
@@ -696,7 +706,7 @@ function WoodHarvesterControls:saveToXMLFile(xmlFile, key, usedModNames)
 
     xmlFile:setValue(key .. "#sawMode", spec.sawMode)
 
-    for i = 1, 4 do
+    for i = 1, 6 do
         local toolKey = string.format("%s.lengthPreset(%d)", key, i - 1)
         xmlFile:setValue(toolKey .. "#length", spec["lengthPreset" .. i])
     end
@@ -758,7 +768,7 @@ function WoodHarvesterControls:onReadStream(superFunc, streamId, connection)
 
     spec.sawMode = streamReadUIntN(streamId, 3)
 
-    for i = 1, 4 do
+    for i = 1, 6 do
         spec["lengthPreset" .. i] = streamReadFloat32(streamId)
     end
     spec.repeatLengthPreset = streamReadBool(streamId)
@@ -814,7 +824,7 @@ function WoodHarvesterControls:onWriteStream(superFunc, streamId, connection)
 
     streamWriteUIntN(streamId, spec.sawMode, 3)
 
-    for i = 1, 4 do
+    for i = 1, 6 do
         streamWriteFloat32(streamId, spec["lengthPreset" .. i])
     end
     streamWriteBool(streamId, spec.repeatLengthPreset)
@@ -1707,7 +1717,7 @@ function WoodHarvesterControls:whcUpdateSettings(settings, noEventSend)
 
     spec.sawMode = settings.sawMode
 
-    for i = 1, 4 do
+    for i = 1, 6 do
         spec["lengthPreset" .. i] = settings["lengthPreset" .. i]
     end
     spec.repeatLengthPreset = settings.repeatLengthPreset
@@ -2159,6 +2169,15 @@ function WoodHarvesterControls:onActionCall(actionName, keyStatus, callbackStatu
         spec.lastPreset2Time = g_time
         return
     end
+    if actionName == ActionName.LENGTH_PRESET_3 then
+        if g_time - spec.lastPreset3Time < spec.doublePressPresetTime then
+            self:whcOnButtonPressed(Button.LENGTH_PRESET_3, true)
+        else
+            self:whcOnButtonPressed(Button.LENGTH_PRESET_3, false)
+        end
+        spec.lastPreset3Time = g_time
+        return
+    end
 
     local buttonId = ActionButtonMapping[actionName]
 
@@ -2373,6 +2392,16 @@ function WoodHarvesterControls:onPreset2Button(isDoublePress)
         WHC.findRegister(self, spec.lengthPreset4)
     else
         WHC.findRegister(self, spec.lengthPreset3)
+    end
+end
+
+function WoodHarvesterControls:onPreset3Button(isDoublePress)
+    local spec = self.spec_woodHarvester
+
+    if isDoublePress then
+        WHC.findRegister(self, spec.lengthPreset6)
+    else
+        WHC.findRegister(self, spec.lengthPreset5)
     end
 end
 

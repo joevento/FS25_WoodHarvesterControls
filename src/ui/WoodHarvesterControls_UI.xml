@@ -398,6 +398,42 @@
           text="$l10n_ui_WoodHarvesterControls_lengthPreset4Title" />
       </Bitmap>
 
+      <!-- length preset 5 -->
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="lengthPreset5"
+          onTextChanged="onLengthChanged" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_lengthPreset5Title"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_lengthPreset5Title"
+          imeTitle="$l10n_ui_WoodHarvesterControls_lengthPreset5Title">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_lengthPreset5TT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_lengthPreset5Title" />
+      </Bitmap>
+
+      <!-- length preset 6 -->
+      <Bitmap profile="fs25_multiTextOptionContainer">
+        <TextInput profile="fs25_settingsTextInput" id="lengthPreset6"
+          onTextChanged="onLengthChanged" focusOnHighlight="true"
+          imeDescription="$l10n_ui_WoodHarvesterControls_lengthPreset6Title"
+          imePlaceholder="$l10n_ui_WoodHarvesterControls_lengthPreset6Title"
+          imeTitle="$l10n_ui_WoodHarvesterControls_lengthPreset6Title">
+          <ThreePartBitmap profile="fs25_textInputBg" />
+          <Bitmap profile="fs25_textInputIconBox">
+            <Bitmap profile="fs25_textInputIcon" />
+          </Bitmap>
+          <Text profile="fs25_multiTextOptionTooltip" name="ignore"
+            text="$l10n_ui_WoodHarvesterControls_lengthPreset6TT" position="680px 0px" />
+        </TextInput>
+        <Text profile="fs25_settingsMultiTextOptionTitle"
+          text="$l10n_ui_WoodHarvesterControls_lengthPreset6Title" />
+      </Bitmap>
+
       <!-- repeat length preset -->
       <Bitmap profile="fs25_multiTextOptionContainer" id="repeatLengthPresetSettingBox">
         <BinaryOption profile="fs25_settingsBinaryOption"

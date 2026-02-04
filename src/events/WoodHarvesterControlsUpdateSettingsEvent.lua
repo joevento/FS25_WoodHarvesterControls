@@ -44,7 +44,7 @@ function WoodHarvesterControlsUpdateSettingsEvent:writeStream(streamId, connecti
 
     streamWriteUIntN(streamId, self.settings.sawMode, 3)
 
-    for i = 1, 4 do
+    for i = 1, 6 do
         streamWriteFloat32(streamId, self.settings["lengthPreset" .. i])
     end
     streamWriteBool(streamId, self.settings.repeatLengthPreset)
@@ -95,7 +95,7 @@ function WoodHarvesterControlsUpdateSettingsEvent:readStream(streamId, connectio
 
     self.settings.sawMode = streamReadUIntN(streamId, 3)
 
-    for i = 1, 4 do
+    for i = 1, 6 do
         self.settings["lengthPreset" .. i] = streamReadFloat32(streamId)
     end
     self.settings.repeatLengthPreset = streamReadBool(streamId)

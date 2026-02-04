@@ -25,6 +25,7 @@
 
         <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_1" text="Esivalinta 1 / 2" />
         <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_2" text="Esivalinta 3 / 4" />
+        <text name="input_WOOD_HARVESTER_CONTROLS_LENGTH_PRESET_3" text="Esivalinta 5 / 6" />
 
         <text name="input_WOOD_HARVESTER_CONTROLS_MENU" text="Avaa Wood Harvester Controls valikko" />
 
@@ -155,6 +156,12 @@ Voit testata, mutta jos se ei toimi oletetusti, poista fysiikkatila käytöstä 
 
         <text name="ui_WoodHarvesterControls_lengthPreset4Title" text="Esivalintapituus 4 (cm)" />
         <text name="ui_WoodHarvesterControls_lengthPreset4TT" text="Määrittää pituuden johon syötetään kun painat 'Esivalintapituus 3 / 4' nappia KAKSI kertaa" />
+
+        <text name="ui_WoodHarvesterControls_lengthPreset5Title" text="Esivalintapituus 5 (cm)" />
+        <text name="ui_WoodHarvesterControls_lengthPreset5TT" text="Määrittää pituuden johon syötetään kun painat 'Esivalintapituus 5 / 6' nappia" />
+
+        <text name="ui_WoodHarvesterControls_lengthPreset6Title" text="Esivalintapituus 6 (cm)" />
+        <text name="ui_WoodHarvesterControls_lengthPreset6TT" text="Määrittää pituuden johon syötetään kun painat 'Esivalintapituus 5 / 6' nappia KAKSI kertaa" />
 
         <text name="ui_WoodHarvesterControls_repeatLengthPresetTitle" text="Toista esivalinta" />
         <text name="ui_WoodHarvesterControls_repeatLengthPresetTT" text="Tämä määrittää mitä pituusmittaa käytetään kun 'Automaattiohjelma katkonnan jälkeen' asetus on päällä:
